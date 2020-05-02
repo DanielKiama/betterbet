@@ -38,6 +38,7 @@ const css = () => {
     .pipe(mode.development(sourcemaps.write()))
     .pipe(size({ showFiles: true }))
     .pipe(rename('styles.css'))
+    
     .pipe(gulp.dest(paths.build.css));
 };
 
