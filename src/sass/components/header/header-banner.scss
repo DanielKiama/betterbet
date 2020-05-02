@@ -8,7 +8,11 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
+@media only screen and (max-width:600px){
+  .header-banner__img-wrapper{
+    min-height: 170px;
+  }
+}
   // "./../../images/img/banners/banner_without_play.png"
 }
 .header-banner-inside-txt {
