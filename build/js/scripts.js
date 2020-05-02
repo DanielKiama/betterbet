@@ -52,4 +52,11 @@ if (betsTableItemsList.length > 0) {
   itemsList.map(function (item) {
     item.addEventListener('click', showCurrentBetslipVal);
   });
+} //main nav
+
+
+function classToggle() {
+  this.classList.toggle('is-active');
 }
+
+document.querySelector('.hamburger').addEventListener('click', classToggle);

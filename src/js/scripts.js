@@ -53,3 +53,12 @@ if (betsTableItemsList.length > 0) {
     }
   }
 }
+
+
+//main nav
+function classToggle() {
+  this.classList.toggle('is-active');
+}
+document.querySelector('.hamburger').addEventListener('click', classToggle);
+
+
