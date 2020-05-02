@@ -1,0 +1,39 @@
+.bets-select {
+  padding: 15px 20px 30px;
+  position: relative;
+
+  background-color: #202323;
+
+  @include media-min(1280px) {
+    display: none;
+  }
+
+  &::after {
+    content: "\e911";
+    @extend %icon;
+    position: absolute;
+    right: 35px;
+    top: 36px;
+    transform: translateY(-50%);
+
+    font-size: 5px;
+    color: white;
+    opacity: 0.5;
+  }
+}
+
+.bets-select__select {
+  width: 100%;
+  padding: 12px 28px 13px 20px;
+  position: relative;
+  
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+
+  border: 1px solid #4C4C4C;
+  border-radius: 8px;
+  background-color: #202323;
+  outline: none;
+  appearance: none;
+}

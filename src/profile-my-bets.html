@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Flooks-layout</title>
+  </head>
+
+  <body>
+    <div class="wrapper wrapper--black">
+      //= ./html-components/header/header-after-log-in-no-search.html
+      <main class="main">
+     <div class="profile-wrapper">
+      <!-- //= ./html-components/profile/profile-balance.html -->
+      //= ./html-components/profile/profile-my-bets.html
+      <div class="bets-table__pagination">
+        <div class="pagination">
+          <button class="pagination__btn pagination__btn--fast-back ">
+            &lt;&lt;
+          </button>
+          <button class="pagination__btn pagination__btn--back ">&lt;</button>
+          <ul class="pagination__list">
+            <li class="pagination__item">1</li>
+            <li class="pagination__item">2</li>
+            <li class="pagination__item pagination__item--active">3</li>
+            <li class="pagination__item">4</li>
+            <li class="pagination__item">5</li>
+            <li class="pagination__item">6</li>
+          </ul>
+          <button class="pagination__btn pagination__btn--forward ">&gt;</button>
+          <button class="pagination__btn pagination__btn--fast-forward ">
+            &gt;&gt;
+          </button>
+        </div>
+      </div>
+
+     </div>
+ 
+     
+        <!-- //////////// -->
+      </main>
+      <!-- //= ./html-components/footer.html -->
+      //= ./html-components/users-footer.html
+    </div>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>

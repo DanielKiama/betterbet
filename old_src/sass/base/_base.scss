@@ -1,0 +1,100 @@
+@import '../abstracts/mixins';
+@import '../abstracts/vars';
+
+body {
+  // width: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px !important;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.2 !important;
+  font-family: $default-font !important;
+  overflow-x: hidden;
+  color: white !important;
+  -webkit-font-smoothing: antialiased;
+  background-color: #313535 !important;
+  height: auto !important;
+
+  &.body--right-eye::before {
+    content: '';
+    position: absolute;
+    background: url(../assets/img/bg-eye.svg) center left no-repeat;
+    background-size: cover;
+    width: 729px;
+    height: 900px;
+    top: 275px;
+    right: 0;
+    opacity: 0.06;
+
+    z-index: 1; // -1;
+    pointer-events: none;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    background: url(../assets/img/bg-eye.svg) top center no-repeat;
+    background-size: cover;
+    width: 1000px;
+    height: 841px;
+    bottom: 0;
+    left: -227px;
+    opacity: 0.09;
+    // z-index: -1;
+    pointer-events: none;
+  }
+
+  @include media-max($lg) {
+    &::before,
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.small-page::before {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+input,
+button {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+// @supports(display: flex){
+//   .wrapper{
+//     display: flex;  
+//   }
+// }
+
+.wrapper {
+  // display: flex;
+
+@media (max-width:480px){
+  display: block;
+  min-height: auto;
+}
+  &--bet-slip {
+    .header,
+    .footer,
+    .main__content {
+      filter: blur(2px);
+    }
+  }
+}
+
+.opera-message {
+  text-align: center;
+}

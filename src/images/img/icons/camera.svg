@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="12px" viewBox="0 0 14 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>Fill 1</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Edit-Profile" transform="translate(-461.000000, -424.000000)" fill="#231F20">
+            <g id="camera" transform="translate(461.000000, 424.000000)">
+                <path d="M7,8.864 C5.668,8.864 4.588,7.784 4.588,6.452 C4.588,5.12 5.668,4.04 7,4.04 C8.332,4.04 9.412,5.12 9.412,6.452 C9.412,7.784 8.332,8.864 7,8.864 M13.203,1.709 L10.302,1.709 L9.798,0.792 C9.53,0.303 9.016,0 8.458,0 L5.542,0 C4.984,0 4.47,0.303 4.202,0.792 L3.698,1.709 L0.797,1.709 C0.357,1.709 0,2.066 0,2.506 L0,10.735 C0,11.176 0.357,11.532 0.797,11.532 L13.203,11.532 C13.643,11.532 14,11.176 14,10.735 L14,2.506 C14,2.066 13.643,1.709 13.203,1.709" id="Fill-1"></path>
+            </g>
+        </g>
+    </g>
+</svg>

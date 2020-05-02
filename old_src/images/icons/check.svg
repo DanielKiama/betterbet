@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="6px" viewBox="0 0 8 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>Check</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M11.7971455,5.20721112 C11.5266728,4.93092963 11.077586,4.93092963 10.8071133,5.20721112 L6.8265718,9.2680278 L5.19863237,7.5894874 C4.91795316,7.31841877 4.47907294,7.31841877 4.19839373,7.59991312 C3.93302429,7.88140747 3.93302429,8.32971329 4.20349699,8.6164205 L6.30093619,10.7484796 L6.33155574,10.7849696 C6.60713169,11.0716768 7.05111517,11.0716768 7.32669112,10.7849696 L11.7971455,6.21850565 C12.0676182,5.93701129 12.0676182,5.48349262 11.7971455,5.20721112 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Login/Register" transform="translate(-564.000000, -478.000000)">
+            <g id="Form" transform="translate(530.000000, 205.000000)">
+                <g id="Check" transform="translate(30.000000, 267.000000)">
+                    <g id="CheckBox" transform="translate(0.000000, 1.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Check" fill="#3D3C38" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

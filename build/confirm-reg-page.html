@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Confirm Registration | Flooks</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="user-login-reg">
+        <div class="user-login-reg__top">
+          <a href="./index.html" class="user-login-reg-close-btn-link">
+            <img
+              src="./images/img/icons/close_login.png"
+              alt=""
+              class="user-login-reg-close-btn-img"
+            />
+          </a>
+          <h2 class="user-login-reg__title">Confirm Registration</h2>
+
+          <form class="user-login-reg__form">
+            <label class="user-login-reg__lable">Phone</label>
+            <input type="text" class="user-login-reg__input" />
+            <label class="user-login-reg__lable">Confirmation Code</label>
+            <input type="text" class="user-login-reg__input" />
+            <button type="submit" class="user-login-reg__submit-btn">
+              continue
+            </button>
+
+            <!-- BACKEND_IF: Show only on error -->
+            <div class="user-login-reg__error">
+              ERROR
+            </div>
+            <!-- END_IF -->
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

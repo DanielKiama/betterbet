@@ -1,0 +1,530 @@
+.bets-table {
+  padding-top: 15px;
+  padding-bottom: 45px;
+  position: relative;
+  color: $grey-text-color;
+  background-color: $primary-light-black-color;
+  border-radius: 5px;
+
+  &--jackpot {
+    padding-top: 0;
+  }
+}
+
+.bets-table-sport-img-wrapper {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.bets-table__header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $primary-yellow-color;
+  font-size: 14px;
+}
+
+.bets-table__header-teams {
+  flex: 1;
+}
+
+.bets-table__teams-info {
+  display: flex;
+  justify-content: space-between;
+  flex: 2;
+  // width: 40%;
+}
+
+.bets-table__betslip {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #141717;
+  border-radius: 3px;
+}
+
+.bets-table__betslip-odds {
+  color: $primary-white-color;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.bets-table__betslip-btn {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 0;
+  outline: 0;
+  background-color: $primary-yellow-color;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+.bets-table__betslip-btn-txt {
+  margin-right: 5px;
+}
+
+.bets-table__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.bets-table__item {
+  // width: 100%;
+  box-sizing: border-box !important;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+
+  background-color: $primary-dark-grey-bg-color;
+  border-radius: 3px;
+
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+
+.bets-table__item-top {
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 12px;
+  &--jackpot-closed {
+    font-size: 8px;
+  }
+  @media (max-width:319px) {
+   font-size: 8px;
+  }
+}
+
+.bets-table__teams-info-odd {
+  flex: 2;
+  text-align: center;
+}
+
+.bets-table-sport {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.bets-table-sport-img {
+  // display: block;
+  display: block;
+  width: 15px !important;
+  height: 15px !important;
+}
+
+.bets-table-timeline {
+  display: flex;
+  align-items: center;
+  &--jackpot-closed {
+    padding-left: 10px;
+  }
+}
+
+.bets-table-date-time__back {
+  margin-left: 5px;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // background-color: $primary-red-color;
+  color: $primary-red-color;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 2px;
+}
+
+.bets-table__item-bottom {
+  display: flex;
+  align-items: center;
+  // justify-content: space-between;
+}
+
+.bets-table__both-score {
+  margin-top: 10px;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid $primary-dark-grey-color;
+}
+
+.bets-table__both-score-txt {
+  display: block;
+  width: 30%;
+  // margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  color: $dark-grey-table-color;
+}
+
+.player-team {
+  flex: 1;
+  // margin-right: 10px;
+}
+
+.player-team__item {
+  display: block;
+  // text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  color: $dark-grey-table-color;
+
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+
+.odds-val__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.odds-val__item,
+.more-markets {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.odds-val__item {
+  margin-right: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 2px solid $primary-white-color;
+  border-radius: 3px;
+  background-color: $primary-white-color;
+  &--jackpot-winner {
+    background-color: #3cb371;
+    border-color: #3cb371;
+  }
+}
+
+.more-markets--inside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3px;
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: $primary-dark-grey-color;
+  color: $primary-yellow-color;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.odds-value-img-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // align-items: center;
+}
+
+.odds-value-img-wrapper-outside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background-color: $primary-dark-grey-color;
+  color: $primary-yellow-color;
+  border-radius: 3px;
+}
+
+.odds-value-img-wrapper-inside {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.odds-value-img {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.bets-table-odds-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex: 2;
+  // max-width: 340px;
+  // padding-right: 20px;
+  // width: 60%;
+}
+
+.odds-val__item,
+.more-markets,
+.odds-value-img-wrapper {
+  flex: 2;
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+
+  .odds-val__item-num {
+    margin: 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .first-prebet {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    //    margin-right: 10px;
+  }
+
+  .first-prebet--short {
+    // display: inline-block;
+    // flex-grow: 1;
+    // text-align: left;
+    margin-right: 40px;
+    @media (max-width:319px) {
+      margin-right: 20px;
+
+    }
+  }
+
+  .first-prebet--semi-short {
+    margin-right: 10px;
+    padding: 0;
+    margin-right: 40px;
+    @media (max-width:319px) {
+      margin-right: 20px;
+    }
+  }
+
+  .odds-val__item-num.first {
+    display: inline-block;
+    flex-grow: 1;
+    text-align: left;
+    margin-right: 15px;
+    box-sizing: border-box;
+  }
+}
+.odds-val__item {
+  @media (max-width: 319px) {
+    font-size: 10px;
+  }
+}
+
+.player-team-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 5px;
+}
+
+.player-team__item {
+  &--score {
+    color: #c44747;
+  }
+}
+
+.score-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.score-wrapper__item {
+  width: 48%;
+}
+
+.score-wrapper__item-text {
+  display: block;
+  margin-bottom: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700px;
+}
+
+.score-wrapper__item-val {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  background-color: $primary-white-color;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+}
+
+.select-countdown-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+  .countdown {
+    font-size: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    color: $primary-white-color;
+
+    &__btn {
+      background-color: #ffdf00;
+      border-radius: 10px;
+      padding: 8px;
+      font-size: 9px;
+      font-weight: 600;
+      margin-top: 5px;
+      cursor: pointer;
+      padding-left: 13px;
+      padding-right: 13px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      &--jackpot-closed {
+        margin-right: 5px;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      @media (max-width: 319px) {
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 8px;
+      }
+    }
+
+    &__time {
+      margin-right: 10px;
+    }
+
+    .countdown-group {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  @media (max-width:319px) {
+    &--weekly-jackpot{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .countdown{
+      margin-left: 0;
+      justify-content: center;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.bets-table-odds-wrapper--jackpot button {
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px;
+  box-sizing: border-box;
+  padding: 4px;
+}
+
+.bets-table--jackpot {
+  padding-bottom: 3px;
+}
+
+.bets-table-odds-wrapper--jackpot {
+  flex: 4;
+}
+.lock {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 15px;
+    height: 15px;
+    background-image: url("../../../images/img/icons/lock.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+.winners-amount-wrapper {
+  margin-top: 5px;
+  // padding-left: 10px;
+  // padding-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.winners-amount-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.winners-amount-header-title {
+  display: block;
+  font-weight: 700;
+  font-size: 10px;
+  color: $primary-yellow-color;
+  @media (max-width: 319px) {
+    text-align: center;
+  }
+}
+.winners-amount-wrapper-flex-1 {
+  flex: 1;
+}
+.winners-amount-wrapper-flex-2 {
+  flex: 2;
+  @media (max-width: 319px) {
+    flex: 1;
+  }
+}
+.winners-amount-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.winners-amount-item {
+  margin-bottom: 2px;
+  display: flex;
+  justify-content: space-between;
+}
+.winners-amount-subitem {
+  font-weight: 500;
+  font-size: 8px;
+  color: $primary-white-color;
+  @media (max-width: 319px) {
+    text-align: center;
+  }
+}

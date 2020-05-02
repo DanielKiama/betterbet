@@ -1,0 +1,129 @@
+.leagues {
+  display: flex;
+  margin: 0 -30px;
+  padding: 0 13px;
+  flex-wrap: wrap;
+  max-height: 0;
+  overflow: hidden;
+
+  &--active {
+    max-height: 5000px;
+  }
+
+  &__item-cont {
+    width: 33.33%;
+    padding: 1px;
+    margin: 5px 0;
+
+    &:last-child {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__item {
+    height: 62px;
+    border-radius: 6px;
+    border: 1px solid rgba(76, 76, 76, 0.6);
+    background-color: #2c3030;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+
+    &:hover, &:focus, &--active {
+      box-shadow: 0 12px 20px rgba(215, 183, 22, 0.24);
+      border-radius: 8px;
+      background-color: $main;
+      border: 1px solid $main;
+    }
+  }
+
+  &__figure {
+    width: 26px; // 24px;
+    height: 26px; // 20px;
+    display: flex;
+    margin: 0 20px 0 0;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__img {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    transition: .2s ease-in-out;
+
+    &--dark {
+      opacity: 0;
+    }
+  }
+
+  &__item:hover &__img--dark,
+  &__item:focus &__img--dark,
+  &__item--active &__img--dark {
+    opacity: 1;
+  }
+
+  &__item:hover &__img--light,
+  &__item:focus &__img--light,
+  &__item--active &__img--light {
+    opacity: 0;
+  }
+
+  &__name {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    margin: 0;
+    transition: .2s ease-in-out;
+  }
+
+  &__item:hover &__name,
+  &__item:focus &__name,
+  &__item--active &__name {
+    color: $dark;
+    font-weight: 700;
+  }
+
+  @include media-max($sm) {
+    display: block;
+
+    &__item-cont {
+      width: auto;
+      padding: 1px;
+
+      &:last-child {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  @include media-max($xs) {
+    margin: 0;
+    padding: 0;
+    display: block;
+
+    &__item-cont {
+      width: auto;
+      padding: 1px;
+      margin: 5px 0;
+
+      &:last-child {
+        margin-bottom: 16px;
+      }
+    }
+
+    &__item {
+      height: 40px;
+      border-radius: 8px;
+      border: 1px solid #4c4c4c;
+      padding: 9px 14px;
+
+      &:hover, &:focus, &--active {
+        box-shadow: none;
+      }
+    }
+  }
+}

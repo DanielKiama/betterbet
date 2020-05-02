@@ -1,0 +1,179 @@
+.live-mini {
+  padding-top: 16px;
+  margin-bottom: 27px;
+
+  &__subtitle {
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  &__title {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 0;
+
+    // display: flex;
+    // align-items: center;
+    img {
+      margin-top: -2px;
+    }
+  }
+
+  &__sport {
+    color: #fff;
+    font-weight: 700;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  &__body {
+    outline: none;
+    overflow: hidden;
+    max-height: 50px;
+  }
+
+  &__item {
+    min-width: 102px;
+    height: 50px;
+    padding: 10px 10px;
+    border-radius: 25px;
+    background-color: #3f4040;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    margin-right: 15px;
+  }
+
+  &__club-logo {
+    width: 15px;
+    height: 15px;
+  }
+
+  &__score {
+    margin: 0 8px;
+    line-height: 16px;
+    display: flex;
+    font-size: 12px;
+    font-weight: 500;
+    color: $gray;
+
+    &-item {
+      min-width: 7px;
+      text-align: center;
+      &:first-child {
+        margin-right: 4px;
+      }
+
+      &:last-child {
+        margin-left: 4px;
+      }
+
+      &--active {
+        color: white;
+      }
+    }
+  }
+}
+
+.live-mini__inner {
+  width: 192px; // 220px
+  box-sizing: border-box;
+  padding-left: 12px; // 26px;
+  padding-right: 12px; // 26px;
+
+  display: flex;
+  align-items: center;
+}
+
+.live-mini__time {
+  width: 25px; // 15px;
+  height: 15px;
+  margin-right: 8px;
+  
+  font-size: 8px;
+  line-height: 15px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+
+  border-radius: 2px;
+  background-color: $danger;
+}
+
+.live-mini__clubs-names {
+  width: 110px;
+}
+
+.live-mini__club-name {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  &:first-child {
+    margin-bottom: 5px;
+  }
+
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 15px;
+  color: #7F7F7F;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  &--active {
+    font-weight: bold;
+  }
+}
+
+.live-mini__score-wrapper {
+  margin-left: auto;
+  width: 22px;
+  
+  border-right: 1px solid rgba(#7F7F7F, 0.44);
+}
+
+.live-mini__score-value {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+  position: relative;
+
+  &:first-child {
+    margin-bottom: 5px;
+  }
+
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: normal;
+  color: #7F7F7F;
+  text-align: left;
+
+  &--active {
+    font-weight: bold;
+  }
+  &--active::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    right: 0;
+
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 3.5px 6px 3.5px 0;
+    border-color: transparent #ffffff transparent transparent;
+  }
+}

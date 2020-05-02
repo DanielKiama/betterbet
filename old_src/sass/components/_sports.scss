@@ -1,0 +1,91 @@
+.sports {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 -13px -28px;
+
+  &__item {
+    width: 126px;
+    height: 132px;
+    margin: 0 13px 28px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: .2s ease-in-out;
+    color: #373838;
+    cursor: pointer;
+
+    &:hover, &:focus, &--active {
+      background-color: $main;
+      text-decoration: none;
+    }
+
+    .games-menu__item-icon {
+      transform: scale(1.66);
+      opacity: 0.5;
+      transition: .3s ease-in-out;
+
+      &-base {
+        fill: #231f20;
+        transition: .2s ease-in-out;
+      }
+
+      &-accent {
+        fill: rgba(0,0,0,0);
+        transition: .2s ease-in-out;
+      }
+    }
+
+    &:hover .games-menu__item-icon,
+    &:focus .games-menu__item-icon,
+    &--active .games-menu__item-icon {
+      opacity: 1;
+
+      &-base {
+        fill: #231f20;
+      }
+
+      &-accent {
+        fill: #fff;
+      }
+    }
+  }
+
+  &__figure {
+    height: 33px;
+    margin-bottom: 13px;
+    margin-top: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item-title {
+    color: #141717;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  &__more {
+    width: 126px;
+    height: 132px;
+    margin: 0 13px 28px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: .2s ease-in-out;
+    color: #373838;
+    border: none;
+    font-size: 12px;
+    font-weight: 700;
+
+    &:hover, &:focus {
+      background-color: $main;
+    }
+  }
+}

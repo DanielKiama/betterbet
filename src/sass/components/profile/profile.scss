@@ -1,0 +1,47 @@
+.profile-wrapper{
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 15px;
+  background-color: $primary-light-black-color;
+}
+.profile-balance{
+padding-top: 20px;
+padding-bottom: 20px;
+padding-right: 10px;
+padding-left: 10px;
+border-bottom: 1px solid $table-gret-bgc;
+}
+.profile-balance__top,.profile-balance__bottom{
+  display: flex;
+  justify-content: space-between;
+  // align-items: center;
+}
+.profile-balance__top{
+  margin-bottom: 10px;
+}
+.profile-balance__bottom{
+  margin-bottom: 20px;
+}
+
+.profile-balance__bonus-title,.profile-balance__account-title{
+  margin: 0;
+}
+.profile-balance__bonus-title,
+.profile-balance-bonus-val{
+  color: $primary-white-color;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.profile-balance__account-title,
+.profile-balance-account-val{
+  color: $primary-white-color;
+}
+.profile-balance__account-title{
+  font-weight: 300;
+  font-size: 18px; 
+}
+.profile-balance-account-val{
+  font-weight: 700;
+  text-transform: uppercase;
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>sent_message</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-10.0%" y="-5.4%" width="120.0%" height="114.4%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.130180027 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <polygon id="path-2" points="0.000238613437 0 13.9867826 0 13.9867826 13.987 0.000238613437 13.987"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Chat-2" transform="translate(-1375.000000, -1329.000000)">
+            <g id="chat" filter="url(#filter-1)" transform="translate(1060.000000, 795.000000)">
+                <g id="sent_message" transform="translate(328.000000, 545.000000)">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M9.5646,4.7078 L5.8466,10.3278 C5.5916,10.7118 5.6436,11.2228 5.9696,11.5498 L8.0336,13.6138 C8.7116,14.2918 9.8686,14.0048 10.1506,13.0878 L13.9616,0.7128 C14.0916,0.2908 13.6966,-0.1052 13.2746,0.0248 L0.8986,3.8368 C-0.0174,4.1188 -0.3044,5.2748 0.3736,5.9538 L2.4376,8.0178 C2.7636,8.3438 3.2746,8.3948 3.6596,8.1408 L9.2796,4.4228 C9.4666,4.2988 9.6886,4.5208 9.5646,4.7078" id="Fill-1" fill="#232320" mask="url(#mask-3)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

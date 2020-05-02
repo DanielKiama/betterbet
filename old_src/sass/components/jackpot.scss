@@ -1,0 +1,80 @@
+.jackpot {
+
+}
+
+.jackpot__details {
+  padding: 16px 28px 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid #ECECEC;
+
+  @include media-max($sm) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.jackpot__text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #141717;
+
+  &--align-right {
+    text-align: right;
+  }
+  &--red {
+    color: $danger;
+  }
+}
+
+.jackpot__details-right-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.jackpot__btn {
+  width: auto;
+  padding: 9px 24px 11px;
+  margin-left: 26px;
+
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #141717;
+  white-space: nowrap;
+
+  border: none;
+  border-radius: 8px;
+  background-color: $main;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  @include media-max($sm) {
+    margin-left: 10px;
+  }
+}
+
+.jackpot__items {
+  padding: 34px 17px 10px;
+
+  background-color: #fff;
+}
+
+.jackpot__item {
+  margin-bottom: 15px;
+
+  background-color: #F8F8F8;
+  border-radius: 12px;
+}

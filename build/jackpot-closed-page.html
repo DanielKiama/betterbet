@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Flooks-layout</title>
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header-wrapper">
+          <div class="header__first-mobile">
+              <div class="header__burger">
+                  <a href="./mobile-menu.html" class="header__burger-link" role="button">Menu</a>
+                </div>
+                <div class="header__logo">
+                  <a href="./index.html" class="header__logo-link" >
+                    <img alt="Flooks" class="header__logo-img" alt="mobile-logo" src="./images/img/logo--mobile.svg">
+                  </a>
+                </div>
+          </div>  
+          <div class="header__block">
+            <div class="header__top">
+              <a href="./login-page.html" role="button" class="header__btn-link" > Login </a>
+              <a href="./register-page.html" role="button" class="header__btn-link" > Register </a>
+            </div>  
+          </div>
+      </div>
+      <div class="main__header-search">
+          <form action="" class="header-search__form">
+            <input type="text" placeholder="type for search..." class="header-search__input">
+            <button type="button" class="header-search__submit-btn">Search</button>
+          </form>
+        </div>
+    <!-- 
+        <div class="tab tab-search">
+            <input type="checkbox" id="tab_seatch" name="tab-group-search">
+            <label for="tab_seatch" class="tab-title tab-title-search">
+              <div class="tab-title-search-img-wrapper">
+                <img src="../../images/img/icons/search.svg" alt="search icon" class="tab-title-search-img">
+              </div>
+            </label> 
+            <section class="tab-content">
+                <div class="main__header-search">
+                    <form action="" class="header-search__form">
+                      <input type="text" placeholder="type for search..." class="header-search__input">
+                      <button type="button" class="header-search__submit-btn">Search</button>
+                    </form>
+                  </div>
+           
+            </section> 
+          </div>   -->
+     
+    
+      <div class="hr"></div>
+    </header>
+    <nav class="header-sports">
+      <ul class="header-sports__list">
+        <li class="header-sports__item header-sports__item--active">
+          <a href="#" class="header-sports__item-link">
+            <img src="./../../images/img/icons/football.svg" alt="" class="sports-svg" />
+          </a>
+        </li>
+        <li class="header-sports__item">
+          <a href="../../live-play-page.html" class="header-sports__item-link">
+            <img src="./../../images/img/live_icon.svg" alt="" class="sports-svg" />
+          </a>
+        </li>
+        <li class="header-sports__item">
+          <a href="#" class="header-sports__item-link">
+            <img src="./../../images/img/sports/Basketball.svg" alt="" class="sports-svg" />
+          </a>
+        </li>
+        <li class="header-sports__item">
+          <a href="#" class="header-sports__item-link">
+            <img src="./../../images/img/sports/Tennis.svg" alt="" class="sports-svg" />
+          </a>
+        </li>
+        <li class="header-sports__item">
+          <a href="#" class="header-sports__item-link">
+            <img src="./../../images/img/sports/Rugby.svg" alt="" class="sports-svg" />
+          </a>
+        </li>
+    
+        <li class="header-sports__item">
+          <a href="#" class="header-sports__item-link">
+            <img src="./../../images/img/sports/Volleyball.svg" alt="" class="sports-svg" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="hr"></div>
+    <main class="main">
+    <div class="main__header">
+        <h2 class="main__header__title main__header__title--wrapper main__header__title--column">
+          <span class="main__header__main-title-span main__header__main-title-span--yellow">Daily Jackpot</span> <span
+            class="main__header__title-span">Jackpot</span>
+        </h2>
+        <div class="main__header-right">
+         <span class="main__header-right-light-block">
+          107,313<br> KSH 
+         </span>
+        </div>
+      </div>
+       <!-- //////////// -->
+    <div class="select-countdown-wrapper">
+      <div class="selector-wrapper">
+        <select class="game-type-selector type-selector" name="game-type-selector" id="game-type-selector-id">
+          <option selected="selected" value="Daily_Jackpot">Daily Jackpot</option>
+          <option value="Weekly_Jackpot" class="game-type-selector__option">Weekly Jackpot</option>
+          <option value="Mid-week_Jackpots" class="game-type-selector__option">Mid-week Jackpots</option>
+        </select>
+      </div>
+      <a href="#" role="button" class="countdown__btn countdown__btn--jackpot-closed">Closed</a>
+    </div>
+    <div class="winners-amount-wrapper">
+      <div class="winners-amount-header">
+        <div class="winners-amount-header-title winners-amount-wrapper-flex-1">Winners</div>
+        <div class="winners-amount-header-title winners-amount-wrapper-flex-2">Correct Selection</div>
+        <div class="winners-amount-header-title winners-amount-wrapper-flex-2">Amount</div>
+      </div>
+      <ul class="winners-amount-list">
+        <li class="winners-amount-item">
+          <div class="winners-amount-subitem winners-val winners-amount-wrapper-flex-1" >5</div>
+          <div class="winners-amount-subitem correct-sel-val winners-amount-wrapper-flex-2">10/10</div>
+          <div class="winners-amount-subitem amount-val winners-amount-wrapper-flex-2" >KSH 20.000 Each</div>
+        </li>
+        <li class="winners-amount-item">
+          <div class="winners-amount-subitem winners-val winners-amount-wrapper-flex-1" >5</div>
+          <div class="winners-amount-subitem correct-sel-val winners-amount-wrapper-flex-2">10/10</div>
+          <div class="winners-amount-subitem amount-val winners-amount-wrapper-flex-2" >KSH 20.000 Each</div>
+        </li>
+      </ul>
+    </div>
+    <div class="bets-table bets-table--jackpot-closed">
+      <div class="bets-table-item-wrapper">
+    
+    
+        <ul class="bets-table__list">
+         
+          <li class="bets-table__item">
+            <div class="bets-table__item-top bets-table__item-top--jackpot-closed">
+              <div class="bets-table-sport">    
+                <span class="bets-table-game">Game 1: Lorem ipsum dolor sit amet consectetur adipisicing elit</span>   
+              </div>
+              <div class="bets-table-timeline bets-table-timeline--jackpot-closed">
+                <div class="bets-table-date">
+                  <span class="bets-table-date__day">11/02,</span>
+                  <span class="bets-table-sport-coma">&#173;</span>
+                </div>
+                <div class="bets-table-date-time">
+                  <span class="bets-table-date-time__hours">23:55</span>
+                </div>
+              </div>
+            </div>
+            <div class="bets-table__item-bottom">
+              <div class="player-team">
+                <span class="player-team__first player-team__item">Tranmere</span>
+                <span class="player-team__second player-team__item">Fatword</span>
+              </div>
+              <div class="bets-table-odds-wrapper">
+                <button class="odds-val__item odds-val__item--jackpot-winner">
+                  <span class="odds-val__item-num">1</span>
+                </button>
+                <button class="odds-val__item">
+                  <span class="odds-val__item-num">X</span>
+                </button>
+                <button class="odds-val__item">
+                  <span class="odds-val__item-num">2</span>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="bets-table__item">
+            <div class="bets-table__item-top bets-table__item-top--jackpot-closed">
+              <div class="bets-table-sport">    
+                <span class="bets-table-game">Game 1: Lorem ipsum dolor sit amet consectetur adipisicing elit</span>   
+              </div>
+              <div class="bets-table-timeline bets-table-timeline--jackpot-closed">
+                <div class="bets-table-date">
+                  <span class="bets-table-date__day">11/02,</span>
+                  <span class="bets-table-sport-coma">&#173;</span>
+                </div>
+                <div class="bets-table-date-time">
+                  <span class="bets-table-date-time__hours">23:55</span>
+                </div>
+              </div>
+            </div>
+            <div class="bets-table__item-bottom">
+              <div class="player-team">
+                <span class="player-team__first player-team__item">Tranmere</span>
+                <span class="player-team__second player-team__item">Fatword</span>
+              </div>
+              <div class="bets-table-odds-wrapper">
+                <button class="odds-val__item r">
+                  <span class="odds-val__item-num">1</span>
+                </button>
+                <button class="odds-val__item odds-val__item--jackpot-winner">
+                  <span class="odds-val__item-num">X</span>
+                </button>
+                <button class="odds-val__item">
+                  <span class="odds-val__item-num">2</span>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="bets-table__item">
+            <div class="bets-table__item-top bets-table__item-top--jackpot-closed">
+              <div class="bets-table-sport">    
+                <span class="bets-table-game">Game 1: Lorem ipsum dolor sit amet consectetur adipisicing elit</span>   
+              </div>
+              <div class="bets-table-timeline bets-table-timeline--jackpot-closed">
+                <div class="bets-table-date">
+                  <span class="bets-table-date__day">11/02,</span>
+                  <span class="bets-table-sport-coma">&#173;</span>
+                </div>
+                <div class="bets-table-date-time">
+                  <span class="bets-table-date-time__hours">23:55</span>
+                </div>
+              </div>
+            </div>
+            <div class="bets-table__item-bottom">
+              <div class="player-team">
+                <span class="player-team__first player-team__item">Tranmere</span>
+                <span class="player-team__second player-team__item">Fatword</span>
+              </div>
+              <div class="bets-table-odds-wrapper">
+                <button class="odds-val__item r">
+                  <span class="odds-val__item-num">1</span>
+                </button>
+                <button class="odds-val__item ">
+                  <span class="odds-val__item-num">X</span>
+                </button>
+                <button class="odds-val__item odds-val__item--jackpot-winner">
+                  <span class="odds-val__item-num">2</span>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="bets-table__item">
+            <div class="bets-table__item-top bets-table__item-top--jackpot-closed">
+              <div class="bets-table-sport">    
+                <span class="bets-table-game">Game 1: Lorem ipsum dolor sit amet consectetur adipisicing elit</span>   
+              </div>
+              <div class="bets-table-timeline bets-table-timeline--jackpot-closed">
+                <div class="bets-table-date">
+                  <span class="bets-table-date__day">11/02,</span>
+                  <span class="bets-table-sport-coma">&#173;</span>
+                </div>
+                <div class="bets-table-date-time">
+                  <span class="bets-table-date-time__hours">23:55</span>
+                </div>
+              </div>
+            </div>
+            <div class="bets-table__item-bottom">
+              <div class="player-team">
+                <span class="player-team__first player-team__item">Tranmere</span>
+                <span class="player-team__second player-team__item">Fatword</span>
+              </div>
+              <div class="bets-table-odds-wrapper">
+                <button class="odds-val__item odds-val__item--jackpot-winner">
+                  <span class="odds-val__item-num">1</span>
+                </button>
+                <button class="odds-val__item">
+                  <span class="odds-val__item-num">X</span>
+                </button>
+                <button class="odds-val__item">
+                  <span class="odds-val__item-num">2</span>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="bets-table__item">
+            <div class="bets-table__item-top bets-table__item-top--jackpot-closed">
+              <div class="bets-table-sport">    
+                <span class="bets-table-game">Game 1: Lorem ipsum dolor sit amet consectetur adipisicing elit</span>   
+              </div>
+              <div class="bets-table-timeline bets-table-timeline--jackpot-closed">
+                <div class="bets-table-date">
+                  <span class="bets-table-date__day">11/02,</span>
+                  <span class="bets-table-sport-coma">&#173;</span>
+                </div>
+                <div class="bets-table-date-time">
+                  <span class="bets-table-date-time__hours">23:55</span>
+                </div>
+              </div>
+            </div>
+            <div class="bets-table__item-bottom">
+              <div class="player-team">
+                <span class="player-team__first player-team__item">Tranmere</span>
+                <span class="player-team__second player-team__item">Fatword</span>
+              </div>
+              <div class="bets-table-odds-wrapper">
+                <button class="odds-val__item r">
+                  <span class="odds-val__item-num">1</span>
+                </button>
+                <button class="odds-val__item odds-val__item--jackpot-winner">
+                  <span class="odds-val__item-num">X</span>
+                </button>
+                <button class="odds-val__item">
+                  <span class="odds-val__item-num">2</span>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="bets-table__item">
+            <div class="bets-table__item-top bets-table__item-top--jackpot-closed">
+              <div class="bets-table-sport">    
+                <span class="bets-table-game">Game 1: Lorem ipsum dolor sit amet consectetur adipisicing elit</span>   
+              </div>
+              <div class="bets-table-timeline bets-table-timeline--jackpot-closed">
+                <div class="bets-table-date">
+                  <span class="bets-table-date__day">11/02,</span>
+                  <span class="bets-table-sport-coma">&#173;</span>
+                </div>
+                <div class="bets-table-date-time">
+                  <span class="bets-table-date-time__hours">23:55</span>
+                </div>
+              </div>
+            </div>
+            <div class="bets-table__item-bottom">
+              <div class="player-team">
+                <span class="player-team__first player-team__item">Tranmere</span>
+                <span class="player-team__second player-team__item">Fatword</span>
+              </div>
+              <div class="bets-table-odds-wrapper">
+                <button class="odds-val__item r">
+                  <span class="odds-val__item-num">1</span>
+                </button>
+                <button class="odds-val__item ">
+                  <span class="odds-val__item-num">X</span>
+                </button>
+                <button class="odds-val__item odds-val__item--jackpot-winner">
+                  <span class="odds-val__item-num">2</span>
+                </button>
+              </div>
+            </div>
+          </li>
+          
+     
+        </ul>
+      </div>
+      <div class="bets-table__pagination">
+        <div class="pagination">
+          <button class="pagination__btn pagination__btn--fast-back ">
+            &lt;&lt;
+          </button>
+          <button class="pagination__btn pagination__btn--back ">&lt;</button>
+          <ul class="pagination__list">
+            <li class="pagination__item">1</li>
+            <li class="pagination__item">2</li>
+            <li class="pagination__item pagination__item--active">3</li>
+            <li class="pagination__item">4</li>
+            <li class="pagination__item">5</li>
+            <li class="pagination__item">6</li>
+          </ul>
+          <button class="pagination__btn pagination__btn--forward ">&gt;</button>
+          <button class="pagination__btn pagination__btn--fast-forward ">
+            &gt;&gt;
+          </button>
+        </div>
+      </div>
+    </div>
+    </main>
+    <!-- //= ./html-components/footer.html -->
+    <section class="users-footer">
+      <nav class="users-footer__nav">
+        <ul class="users-footer__list">
+          <li class="users-footer__item">
+            <a href="../index.html" class="users-footer__link users-footer__link--active">
+              <div class="users-footer__img-wrapper">
+                <img
+                  src="./../images/img/users-footer/simple-house-thin.svg"
+                  alt=""
+                  class="users-footer__img"
+                />
+              </div>
+              <span class="users-footer__link-txt">Home</span>
+            </a>
+          </li>
+          <li class="users-footer__item">
+            <a href="../betslip-page.html" class="users-footer__link">
+              <div class="users-footer__img-wrapper">
+                <img
+                  src="./../images/img/users-footer/invoice.svg"
+                  alt=""
+                  class="users-footer__img"
+                />
+              </div>
+    
+              <span class="users-footer__link-txt">Betslip</span>
+            </a>
+          </li>
+          <!-- <li class="users-footer__item">             
+                    <a href="#" class="users-footer__link">
+                      <div class="profile-footer-img-wrapper profile-footer-img-wrapper--user">
+                        <img src="../images/img/users-footer/userpic.png" alt="profile footer image" class="profile-footer-img">
+                      </div>
+                    </a>
+                  </li> -->
+          <li class="users-footer__item">
+            <a href="../last-week-jackpot.html" class="users-footer__link users-footer__change">
+              <div class="users-footer__img-wrapper">
+                <img
+                  src="./../images/img/users-footer/Jackpot.svg"
+                  alt=""
+                  class="users-footer__img"
+                />
+              </div>
+              <span class="users-footer__link-txt">Jackpot</span>
+            </a>
+          </li>
+          <li class="users-footer__item">
+            <a href="../my-account-page.html" class="users-footer__link">
+              <div class="users-footer__img-wrapper">
+                <img
+                  src="./../images/img/users-footer/user-profile.svg"
+                  alt=""
+                  class="users-footer__img"
+                />
+              </div>
+    
+              <span class="users-footer__link-txt my-account"
+                >My&nbsp;Account</span
+              ></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- <div class="users-footer__decorate users-footer__decorate--light">   
+            </div> -->
+    </section>
+  </div>
+  <!-- <script src="./js/scripts.js"></script> -->
+
+</body>
+
+</html>

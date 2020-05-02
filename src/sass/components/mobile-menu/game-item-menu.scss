@@ -1,0 +1,128 @@
+.games {
+  padding: 13px 0px;
+}
+
+.games__countries {
+  color: $primary-white-color;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 22px;
+}
+.games__item-link {
+  text-decoration: none;
+}
+.today {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  padding-left: 52px;
+  padding-right: 22px;
+}
+.today__games-link {
+  color: $primary-white-color;
+  font-size: 12px;
+  font-weight: 500;
+}
+.today__games-img-wrapper {
+  width: 15px;
+  height: 22px;
+}
+.today__games-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.arrow-undo-wrapper {
+  width: 19px;
+  height: 19px;
+}
+.arrow-undo-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.country__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.country-box__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;padding-bottom: 12px;
+  padding-left: 22px;
+  padding-right: 22px;
+  @media (max-width:319px) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+.tab-country-box__left {
+  display: flex;
+  align-items: center;
+  &--faq{
+    width: 100%;
+  }
+}
+.country-box__flag-wrapper {
+  width: 24px;
+  height: 24px;
+  margin-right: 14px;
+}
+.country-box__fleg-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.country-box__name {
+  color: $primary-white-color;
+  font-size: 12px;
+  font-weight: 500;
+  &--faq,
+  &--faq-thin{
+    padding: 15px;
+    color: rgb(76, 76, 76);
+    background-color: rgb(245, 244, 244);
+    display: block;
+    width: 100%;
+    text-transform: none;
+    
+    font-size: 14px;
+  }
+  &--faq{
+    font-weight: 700;
+  }
+
+}
+.tab-country-box__count {
+  color: $primary-white-color;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.league__list{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.league__item-link{
+  text-decoration: none;
+}
+.league__item{
+  // padding-left: 22px;
+  // padding-right: 22px;
+  border-bottom: 1px solid $primary-light-black-color;
+  background-color: $primary-dark-grey-color;
+}

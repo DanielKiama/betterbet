@@ -1,0 +1,77 @@
+@import "../abstracts/vars";
+
+.aside-menu {
+  background: $dark;
+  padding: 133px 10px 0;
+  width: 70px;
+  min-width: 70px;
+  position: relative;
+  z-index: 2;
+
+  &--fixed {
+    position: fixed;
+    height: 100%;
+  }
+
+  @include media-max($md) {
+    display: none;
+  }
+}
+
+.burger {
+  width: 100%; // 16px;
+  height: 100%; // 15px;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  position: relative;
+  opacity: .5;
+  transition: .2s ease-in-out;
+
+  &:hover, &:focus {
+    opacity: 1;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%; // 0;
+    top: 50%; // 3px;
+    margin-top: -4px;
+    margin-left: -8px;
+    transform: translateY(0) rotate(0);
+
+    width: 16px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #fff;
+
+    transition: all .4s;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%; // 0;
+    top: 50%; // 9px;
+    margin-top: 2px;
+    margin-left: -8px;
+    transform: translateY(0) rotate(0);
+
+    width: 16px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #fff;
+
+    transition: all .4s;
+  }
+
+  &--active::before {
+    border-radius: 0 2px 2px 0;
+    transform: translateY(-2px) rotate(-45deg);
+  }
+  &--active::after {
+    border-radius: 0 2px 2px 0;
+    transform: translateY(2px) rotate(45deg);
+  }
+}

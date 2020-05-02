@@ -1,0 +1,47 @@
+.account-menu {
+  list-style: none;
+  padding: 0;
+  margin: 29px 0 20px;
+
+  &__item {
+    margin-bottom: 35px;
+
+    &-link {
+      color: #fff;
+      font-size: 12px;
+      font-weight: 500;
+      padding: 0 0 0 36px;
+      position: relative;
+      cursor: pointer;
+
+      &:hover, &:focus {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+
+    &-icon {
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 14px;
+      line-height: 16px;
+      color: #656665;
+      width: 18px;
+      text-align: center;
+      transition: .2s ease-in-out;
+    }
+
+    .icon-edit {
+      font-size: 16px;
+    }
+
+    &-link:hover &-icon,
+    &-link:focus &-icon,
+    &-link--active &-icon {
+      color: #fdd92a;
+    }
+
+
+  }
+}

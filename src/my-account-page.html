@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Flooks-layout</title>
+  </head>
+
+  <body>
+    <div class="wrapper wrapper--black">
+        //= ./html-components/header/pre-header-notification.html
+        <!--  -->
+      //= ./html-components/header/header-after-log-in.html
+      <!--  -->
+      //= ./html-components/header/header-sports.html
+
+      <main class="main">
+        <!-- //= ././html-components/main/main-header.html -->
+        <!-- //= ././html-components/main/main-header-bottom.html -->
+        //= ./html-components/main/main-header-search.html
+        <div class="flex-row-wrapper">
+          <div class="my-account-wrapper">
+            <div class="group-btn__wrapper">
+              <a class="btn-profile" href="./profile-edit-page.html">Edit profile</a>
+              <div class="group-btn__item">
+                <a class="btn" href="./profile-widthdraw-popup.html">WITHDRAW</a>
+                <a class="btn" href="./profile-my-bets.html">MY BETS</a>
+              </div>
+              <div class="line"></div>
+            </div>
+            <div class="account-data">
+              <div class="account-data__item">
+                <a href="./my-account-page.html" class="refresh-btn account-refresh">
+                    <img src="../../images/img/icons/refresh.png" alt="" srcset="">
+                </a>
+                <span class="account-name">Account</span>
+                <span class="account-digit">0.64</span>
+              </div>
+              <div class="account-data__item">
+                <span class="account-name">Phone</span>
+                <span class="account-digit">254792414336</span>
+               
+              </div>
+              
+            </div>
+            <div class="line"></div>
+            <div class="bonus-wrapper">
+              <div class="bonus__item">
+                <span class="bonus-name">Account</span>
+                <span class="bonus-digit">0.64</span>
+              </div>
+              <div class="bonus__item">
+                <span class="bonus-name">Phone</span>
+                <span class="bonus-digit">254792414336</span>
+              </div>
+            </div>
+            <div class="group-btn__item">
+              <a class="btn" href="./profile-transaction-page.html">Transaction</a>
+              <a class="btn" href="./profile-ticket-page.html">Ticket</a>
+            </div>
+            <div class="line"></div>
+
+            <div class="logout">
+              <a href="">LOG OUT</a>
+            </div>
+            <div class="line"></div>
+          </div>
+        </div>
+
+        <!-- //////////// -->
+      </main>
+      <!-- //= ./html-components/footer.html -->
+       //= ./html-components/users-footer-menu.html
+      //= ./html-components/users-footer.html
+    </div>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>

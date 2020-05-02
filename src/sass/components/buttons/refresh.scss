@@ -1,0 +1,44 @@
+.refresh-btns-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 100%; 
+    width: 100%;
+}
+.refresh-btn {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+   
+    background: #fff;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 2px;
+    // border: 1px solid #ffdf00;
+    align-self: flex-end;
+    margin-bottom: 5px;
+    width: 20px;
+    height: 20px;
+
+    img {
+        display: block;
+        width: 20px !important;
+        height: 20px !important;
+        margin-top: -2px;
+        object-fit: contain;
+
+    }
+
+}
+.refresh-btn--back{
+    img {
+        width: 15px;
+        height: 15px;
+
+    } 
+}
+
+.account-refresh {
+    position: absolute;
+    right: 30px;
+}

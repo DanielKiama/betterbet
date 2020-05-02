@@ -1,0 +1,463 @@
+.my-bets {
+  &__item {
+    display: block;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.05);
+
+    & + & {
+      margin-top: 10px;
+    }
+  }
+
+  &__body {
+    padding: 20px 30px 28px;
+  }
+
+  &__league {
+    color: #fff;
+    font-size: 10px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 24px;
+
+    &-icon {
+      color: #8f9191;
+      margin-right: 9px;
+      font-size: 14px;
+      line-height: 1;
+      vertical-align: middle;
+    }
+  }
+
+  &__teams {
+    display: flex;
+    align-items: center;
+  }
+
+  &__teams-mobile-wrapper {
+    @include media-min($sm) {
+      display: none;
+    }
+  }
+
+  &__center {
+    width: 156px;
+    text-align: center;
+  }
+
+  &__more-btn-arrow {
+    width: 20px;
+    height: 20px;
+
+    font-size: 5px;
+    // margin-left: 3px;
+    // vertical-align: middle;
+    // display: inline-block;
+
+    // position: relative;
+    position: absolute;
+    top: 0px;
+    right: -18px;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 4px 3.5px 0 3.5px;
+      border-color: $danger transparent transparent transparent;
+      // margin-left: 5px;
+
+      position: absolute;
+      top: 8px;
+      left: 7px;
+    }
+  }
+
+  &__multi-selections {
+    opacity: 0;
+    visibility: hidden;
+
+    &--active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    padding-top: 20px;
+    z-index: 10;
+
+    @include media-max($sm) {
+      right: 0;
+      left: auto;
+    }
+  }
+  &__multi-selections-wrapper {
+    max-height: 220px;
+    overflow-y: scroll;
+
+    border-radius: 8px;
+  }
+  &__multi-selection-item {
+    width: 100%;
+    padding: 10px 19px;
+  
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #202124;
+    background-color: white;
+    text-align: left;
+    
+    &:not(&--active) {
+      cursor: pointer;
+    }
+    &:not(&--active):hover {
+      background-color: #F1F1ED;
+    }
+
+    &--active {
+      background-color: #fdd50b;
+    }
+  }
+  &__multi-selection-item-status {
+    &--won {
+      color: $green;
+    }
+
+    &--lost {
+      color: $danger;
+    }
+
+    &--pending {
+      fill: rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  &__team {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &-figure {
+      width: 60px;
+      min-width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 1px solid #464545;
+      background-color: #2c3030;
+      display: flex;
+      margin: 0;
+    }
+
+    &-img {
+      max-width: 36px;
+      max-height: 36px;
+      margin: auto;
+    }
+
+    &:last-child {
+      justify-content: flex-start;
+    }
+
+    &-name {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      margin: 0;
+      padding: 0 20px;
+    }
+  }
+
+  &__bet-type {
+    display: inline-block;
+    color: $danger;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.67;
+    margin: 0;
+    position: relative;
+  }
+
+  &__outcome {
+    color: #fff;
+    font-size: 10px;
+    font-weight: 300;
+    margin-bottom: 7px;
+
+    &--bold {
+      font-weight: bold;
+    }
+  }
+
+  &__date {
+    color: #fff;
+    font-size: 10px;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  @include media-max($sm) {
+    &__item {
+      & + & {
+        margin-top: 9px;
+      }
+    }
+
+    &__body {
+      padding: 20px 30px 30px;
+    }
+
+    &__league {
+      text-align: left;
+      margin-bottom: 20px;
+      padding-left: 6px;
+
+      &-icon {
+        margin-right: 13px;
+      }
+    }
+
+    &__teams {
+      position: relative;
+      align-items: flex-start;
+    }
+
+    &__teams-mobile-wrapper {
+      display: block;
+      width: calc(100% - 100px);
+      box-sizing: border-box;
+      padding-right: 20px;
+    }
+
+    &__center {
+      width: 100px;
+      text-align: right;
+    }
+
+    &__team {
+      justify-content: flex-start;
+
+      &-figure {
+        width: 25px;
+        min-width: 25px;
+        height: 25px;
+        order: -1;
+      }
+
+      &-img {
+        max-width: 14px;
+        max-height: 14px;
+      }
+
+      &-name {
+        padding: 0 10px;
+        font-size: 12px;
+        font-weight: 500;
+      }
+
+      &:last-child {
+        margin-top: 7px;
+      }
+
+      .my-bets__teams > & {
+        display: none;
+      }
+    }
+
+    &__bet-type {
+      margin-top: 2px;
+      margin-bottom: 15px;
+    }
+
+    &__date {
+      position: absolute;
+      top: -32px;
+      right: 0;
+    }
+  }
+
+  @include media-max($xs) {
+    &__body {
+      padding: 20px 15px 30px;
+    }
+  }
+
+}
+
+.my-bets-stats {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #4c4c4c;
+
+  &__item {
+    flex: 1;
+    padding: 12px 10px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    &-stat {
+      white-space: nowrap;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-top: -11px;
+      width: 1px;
+      height: 21px;
+      background-color: #4c4c4c;
+    }
+
+    &:first-child::before {
+      display: none;
+    }
+  }
+
+  &__name {
+    color: #fff;
+    font-size: 10px;
+    font-weight: 300;
+    margin-bottom: 4px;
+  }
+
+  &__value {
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  &__status {
+    width: 87px;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid rgba(76, 76, 76, 0.6);
+    background-color: #2c3030;
+    line-height: 28px;
+    text-align: center;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+
+    &-icon {
+      font-size: 12px;
+      margin-right: 5px;
+      vertical-align: middle;
+    }
+
+    &--won {
+      background-color: transparentize($green, 0.9);
+      color: $green;
+    }
+
+    &--lost {
+      background-color: transparentize($danger, 0.95);
+      color: $danger;
+    }
+
+    &--pending {
+      fill: rgba(255, 255, 255, 0.5);
+    }
+
+    &--lost &-icon {
+      font-size: 10px;
+      margin-right: 6px;
+    }
+  }
+
+  @include media-max($sm) {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: none;
+    align-items: stretch;
+
+    &__item {
+      border-top: 1px solid #4c4c4c;
+      width: 33.3%;
+      flex: auto;
+      align-items: center;
+
+      &--odds {
+        order: 1;
+        width: 27%;
+      }
+
+      &--bet {
+        order: 2;
+      }
+
+      &--win {
+        order: 3;
+      }
+
+      &--id {
+        order: 4;
+      }
+
+      &--single {
+        order: 5;
+      }
+
+      &--status {
+        order: 6;
+      }
+
+      &--odds, &--bet, &--win {
+        border-top: none;
+
+        &::before {
+          display: none;
+        }
+      }
+
+      &--id &-stat, &--single &-stat {
+        display: flex;
+      }
+    }
+
+    &__item--id &__name, &__item--single &__name {
+      margin-right: 7px;
+      font-weight: 700;
+    }
+
+    &__item--id &__value, &__item--single &__value {
+      font-weight: 300;
+    }
+
+    &__status {
+      width: auto;
+      height: auto;
+      border-radius: 0;
+      border: none;
+      background-color: transparent;
+      line-height: normal;
+
+      &-icon {
+        line-height: .9;
+      }
+
+      &--won {
+        background-color: transparent;
+      }
+
+      &--lost {
+        background-color: transparent;
+      }
+
+      &--lost &-icon {
+        line-height: .85;
+      }
+    }
+  }
+
+}

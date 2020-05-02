@@ -1,0 +1,169 @@
+.main-news {
+    background-image: url(../../../images/img/players/werner.jpg);
+    background-position: top;
+    height: 240px;
+    margin: 10px 10px 1px 10px;
+    border-radius: 14px;
+
+    &__sport {
+        padding: 10px;
+        font-size: 12px;
+        padding-top: 15px;
+        margin-left: 5px;
+        color: #fdd50b;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    &__title {
+        margin-left: 15px;
+        margin-right: 10px;
+        text-align: left;
+
+        &-link {
+            color: #fff;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        color: #fff;
+        font-size: 11px;
+        font-weight: 500;
+        margin-left: 0;
+    }
+
+
+
+    &__time {
+        margin-left: 10px;
+        font-weight: 700;
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            border-radius: 50%;
+            background:
+                #fff;
+            left: -7px;
+            top: 50%;
+            margin-top: -1px;
+        }
+    }
+}
+
+.dark-block {
+    border-radius: 14px;
+    background-color: #202323;
+    margin: 10px;
+    margin-top: 3px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 30px;
+        padding-left: 5px;
+        font-size: 12px;
+        color: #fff;
+    }
+
+    &-tabs {
+        display: flex;
+
+        &__item {
+            color: #fff;
+            padding-left: 10px;
+        }
+
+    }
+
+    &__body {
+        padding: 10px 20px;
+    }
+
+
+
+}
+
+.news__item {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #4c4c4c;
+}
+
+.news-item {
+    height: 53px;
+    position: relative;
+
+    &__img {
+        background-image: url(../../images/img/players/kiko.jpg);
+        height: 53px;
+        width: 53px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: 0;
+        border-radius: 8px;
+        background-position: center;
+        background-size: cover;
+
+    }
+
+    &__top {
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        left: 70px;
+        margin-bottom: 0;
+        position: absolute;
+        bottom: 0;
+        color: #fff;
+        margin: 0;
+
+
+    }
+
+    &__sport {
+        color: #fdd50b;
+        font-size: 10px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0;
+        margin-top: 15px;
+    }
+
+    &__date {
+        color: #fff;
+        font-size: 10px;
+        position: relative;
+        margin: 15px 0 0 15px;
+    }
+
+    &__title {
+        font-size: 12px;
+        line-height: 1.5;
+        height: 36px;
+        margin-bottom: 0;
+        overflow: hidden;
+        margin-left: 70px;
+
+
+        &-link {
+            color: #fff;
+        }
+    }
+}
+
+.news-article {
+    padding: 20px 20px 55px;
+    color: #fff;
+    text-align: justify;
+    border-bottom: 1px solid #4c4c4c;
+}
+
+.main-news__footer--primary {
+    margin-left: 15px;
+}

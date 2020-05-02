@@ -1,0 +1,51 @@
+@import './normalize.scss';
+@import './helpers/variables.scss';
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900');
+
+// @import "vendors/bootstrap-reboot.scss";
+@import './base.scss';
+@import './vendors.scss';
+@import './helpers/fonts.scss';
+
+////helpers
+
+///compoments
+@import './components/header/header.scss';
+@import './components/header/header-sports.scss';
+@import './components/header/header-banner.scss';
+@import './components/footer/footer.scss';
+@import './components/main/main.scss';
+@import './components/tabs/tabs.scss';
+@import './components/bets-table/bets-table.scss';
+@import './components/prebets-table/prebets-table.scss';
+@import './components/header/header-match-data.scss';
+@import './components/header/notification.scss';
+
+///buttons
+@import './components/buttons/counter-btn.scss';
+@import './components/buttons/quick-pick.scss';
+@import './components/buttons/refresh.scss';
+/*
+bets pagination b
+*/
+@import './components/bets-table/bets-table-pagination.scss';
+@import './components/mobile-menu/mobile.menu.scss';
+@import './components/mobile-menu/game-item-menu.scss';
+@import './components/pop-up/user-login-reg.scss';
+@import './components/main/game-type-selector.scss';
+@import './components/footer/users-footer.scss';
+@import './components/my-account/my-account.scss';
+@import './components/betslip/betslip.scss';
+@import './components/promotions/promotions.scss';
+@import './components/news/news.scss';
+@import './components/my-account/users-footer-menu.scss';
+@import './components/footer/faq.scss';
+@import './components/footer/footer-bottom-text.scss';
+//////profile-components
+@import './components/profile/profile.scss';
+@import './components/profile/edit-profile.scss';
+@import './components/profile/transaction-profile.scss';
+@import './components/profile/profile-ticket.scss';
+@import './components/profile/profile-my-bets.scss';
+@import './components/profile/my-bets-details.scss';
+@import './components/betslip/betslip-clear.scss';

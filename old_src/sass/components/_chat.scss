@@ -1,0 +1,247 @@
+.chat {
+  height: 578px;
+  // background: #fff;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 14px 7px rgba(0, 0, 0, 0.14);
+  //padding: 24px 0 0;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  opacity: 0;
+  transition: .2s ease-in-out;
+
+  &--active {
+    visibility: visible;
+    opacity: 1;
+  }
+  &--widget {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 380px;
+    height: 578px;
+    z-index: 40;
+    max-height: 100%;
+
+    @include media-max($md) {
+      display: none;
+    }
+  }
+  &--show-always {
+    height: 350px;
+    margin-bottom: 25px;
+  }
+  &--full-page {
+    height: 706px;
+    margin-bottom: 0;
+    box-shadow: none;
+  }
+
+  &__title {
+    color: #252929;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  &__body {
+    padding: 25px 30px;
+    overflow-y: auto;
+    flex: 1;
+  }
+
+  &__message {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    position: relative;
+
+    &-text {
+      padding: 12px 20px;
+      border-radius: 8px;
+      background-color: #fdd92a;
+      color: #202124;
+      font-size: 12px;
+      font-weight: 500;
+      text-align: right;
+      max-width: 207px;
+      margin: 0;
+    }
+
+    &--incoming {
+      justify-content: flex-start;
+      padding-left: 42px;
+    }
+
+    &--incoming &-text {
+      text-align: left;
+      background-color: #eaeaea;
+    }
+  }
+
+  &__user {
+    bottom: -21px;
+    width: 52px;
+    left: -10px;
+    text-align: center;
+    display: block;
+    position: absolute;
+
+    &-avatar {
+      width: 32px;
+      height: 32px;
+      margin-bottom: 6px;
+    }
+
+    &-name {
+      color: #202124;
+      font-size: 10px;
+      font-weight: 500;
+      margin: 0;
+    }
+
+  }
+
+  &__form {
+    height: 53px;
+    background-color: #eaeaea;
+    display: flex;
+    padding: 12px 30px;
+  }
+
+  &__input {
+    padding: 0;
+    flex: 1;
+    margin-right: 20px;
+    border: none;
+    background: transparent;
+    color: #202124;
+    font-size: 12px;
+    font-weight: 400;
+
+    &::placeholder {
+      color: #202124;
+    }
+  }
+
+  &__send-btn {
+    width: 29px;
+    min-width: 29px;
+    height: 29px;
+    background-color: #fdd92a;
+    border-radius: 50%;
+    font-size: 14px;
+    line-height: 32px;
+    text-align: center;
+    border: none;
+    padding: 0;
+  }
+
+  &__close {
+    // display: none;
+    width: 7px;
+    height: 7px;
+    padding: 0;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 9px;
+      height: 1px;
+      left: -1px;
+      top: 3px;
+      background-color: #232320;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: -1px;
+      top: 3px;
+      width: 9px;
+      height: 1px;
+      background-color: #232320;
+      transform: rotate(135deg);
+    }
+  }
+
+  @include media-max($xs) {
+    width: 100%;
+    height: 100%;
+    max-height: 100vh;
+    border-radius: 0;
+    padding: 38px 0 0;
+
+    &__close {
+      display: block;
+      width: 10px;
+      height: 10px;
+
+      &::before {
+        width: 13px;
+        left: -2px;
+        top: 4px;
+      }
+
+      &::after {
+        left: -2px;
+        top: 4px;
+        width: 13px;
+      }
+    }
+  }
+
+  #chat-widget-root {
+    height: 100%;
+  }
+}
+
+// #chat-widget-root .chat-widget {
+//   background-color: transparent;
+// }
+// #chat-widget-root .chat-widget-chatbox {
+//   background-color: white;
+// }
+.chat--full-page {
+  #chat-widget-root .chat-widget-navbar p {
+    text-align: left;
+    margin-left: 10px;
+  }
+}
+
+.chat-btn {
+  position: fixed;
+  z-index: 30;
+  right: 90px;
+  bottom: 21px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #ffd701 url('../assets/img/chat-btn.png') center no-repeat;
+  background-size: cover;
+  border: none;
+
+  @include media-max($xs) {
+    border: 1px solid $dark;
+    right: 90px;
+    bottom: 21px;
+  }
+  @include media-max($lg) {
+    display: none;
+    &--active {
+      display: block;
+    }
+  }
+}
+
+#chat-widget-root {
+  margin-bottom: 25px;
+}

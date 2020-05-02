@@ -1,0 +1,119 @@
+.header-sports {
+  background-color: $primary-yellow-color;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.header-sports__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-sports__item {
+  width: 100%;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  background-color: #fff;
+  margin-left: 2px;
+  margin-right: 2px;
+  border-radius: 3px;
+  // margin: 5px;
+  // &--active {
+  //     // background-color: $primary-yellow-color;
+  //     // box-shadow: 6px 0px 6px rgba(215, 183, 22, 0.61);
+  //     // border-radius: 10px;
+  // }
+}
+.header-sports__item--active a {
+  background-color: $primary-yellow-color;
+  // box-shadow: 6px 0px 6px rgba(215, 183, 22, 0.61);
+  border-radius: 3px;
+  margin: 1px;
+}
+
+.header-sports__item-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 5px;
+  height: 40px;
+  // border: 1px solid  $primary-dark-grey-color;
+  // border-radius: 5px;
+  @media (max-width: 319px) {    
+    height: 25px;
+  }
+}
+
+.sports-svg {
+  display: block;
+  width: 35px;
+  height: 35px;
+  // object-fit: contain;
+
+  // .svg-path {
+  //   fill: #000;
+  // }
+  // .svg-g {
+  //   fill: #8f9090;
+  // }
+  @media (max-width: 319px) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+// .sports-svg path{
+//   fill: #8f9090;
+// }
+// .sports-svg g{
+//   fill: #000 ;
+// }
+.header-sports__item--active {
+  .sports-svg {
+    width: 35px;
+    height: 35px;
+
+    .svg-path {
+      fill: #fff;
+    }
+
+    .svg-g {
+      fill: #000;
+    }
+    @media (max-width: 319px) {
+      width: 23px;
+      height: 23px;
+    }
+  }
+}
+
+.live-wrapper {
+  display: block;
+  width: 40px;
+  height: 40px;
+
+  .live-wrapper-link {
+    display: block;
+    width: 40px;
+    height: 40px;
+
+    .live-wrapper__img {
+      display: block;
+      width: 40px;
+      height: 40px;
+    }
+
+    .live {
+      display: block;
+      width: 40px;
+      height: 40px;
+    }
+  }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BetSlip | Flooks</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="betslip-page">
+  <div class="wrapper">
+    <header class="light-block__header light-block__header--bet-slip">
+      <h3 class="light-block__title light-block__title--bet-slip">BetSlip</h3>
+      <button class="light-block__close light-block__close--bet-slip" type="button">
+        <span class="icon-lost icon-lost--bet-slip"></span>
+      </button>
+    </header>
+    <form class="light-block__body light-block__body--bet-slip ng-untouched ng-pristine ng-invalid" novalidate="">
+      <div class="bet-slip">
+        <div class="bet-slip__inner">
+          <div class="bet-slip__item">
+            <button class="bet-slip__item-close" type="button"></button>
+            <div class="bet-slip__item-inner">
+              <div class="bet-slip__teams">
+                <div class="bet-slip__team">
+                  <p class="bet-slip__team-name">Olympique Lyonnais</p>
+                </div>
+                vs
+                <div class="bet-slip__team">
+                  <p class="bet-slip__team-name">Juventus Turin</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bet-slip__info">
+              <p class="bet-slip__outcome">Market: <span>1x2</span></p>
+            </div>
+
+            <div class="bet-slip__info">
+              <p class="bet-slip__outcome">Your pick: <b>draw</b></p>
+              <p class="bet-slip__odds "><span class="crossed-odds">3.2</span><span
+                  class="bet-slip__odds-final increased-odds">3.55</span></p>
+            </div>
+            <div class="bet-slip__info">
+              <p class="bet-slip__outcome">Your pick: <b>draw</b></p>
+              <p class="bet-slip__odds "><span class="crossed-odds">4.2</span><span
+                  class="bet-slip__odds-final reduced-odds">3.55</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bet-slip__item bet-slip__item--row">
+        <div class="bet-slip__item-footer bet-slip__item-footer--wide">
+          <div class="bet-slip__bet-cont bet-slip__bet-cont--wide">
+            <input class="bet-slip__bet ng-untouched ng-pristine ng-invalid" formcontrolname="stake"
+              placeholder="30 - 20000" type="text" />
+          </div>
+        </div>
+        <a href="../../live-games-details.html" class="refresh-btn banner-refresh">
+          <img src="../../images/img/icons/refresh.png" alt="" srcset="" />
+        </a>
+      </div>
+
+
+
+      <div class="bet-slip-total">
+        <table class="bet-slip-total__table">
+          <tbody>
+            <tr class="bet-slip-total__tr">
+              <th class="bet-slip-total__th">Stake after Tax</th>
+              <td class="bet-slip-total__td">0 KSH</td>
+            </tr>
+            <tr class="bet-slip-total__tr">
+              <th class="bet-slip-total__th">Total Odds</th>
+              <td class="bet-slip-total__td">3.2</td>
+            </tr>
+            <tr class="bet-slip-total__tr">
+              <th class="bet-slip-total__th">Withholding Tax</th>
+              <td class="bet-slip-total__td">0.00 KSH</td>
+            </tr>
+            <tr class="bet-slip-total__tr">
+              <th class="bet-slip-total__th">Possible Payout</th>
+              <td class="bet-slip-total__td">0.00 KSH</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="bet-slip__error">Please login</p>
+      <button class="bet-slip__btn" type="submit" disabled="">
+        Place bet</button>
+        <a href="./betslip-page-clear.html" role='button' class="bet-slip__clear" type="button">
+        <span class="bet-slip__clear-icon icon-lost"></span> Clear betslip
+      </a>
+    </form>
+  </div>
+</body>
+
+</html>

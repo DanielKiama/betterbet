@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Flooks-register</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <section class="user-login-reg">
+        <div class="user-login-reg__top">
+          <a href="./index.html" class="user-login-reg-close-btn-link">
+            <img
+              src="./images/img/icons/close_login.png"
+              alt=""
+              class="user-login-reg-close-btn-img"
+            />
+          </a>
+          <h2 class="user-login-reg__title">Register</h2>
+          <form class="user-login-reg__form">
+            <label class="user-login-reg__lable">phone</label>
+            <input type="text" class="user-login-reg__input" />
+            <label class="user-login-reg__lable">date of birth</label>
+            <input
+              type="text"
+              class="user-login-reg__input"
+              placeholder="__.__.____"
+            />
+            <label class="user-login-reg__lable">password</label>
+            <input
+              type="password"
+              class="user-login-reg__input"
+              placeholder="Enter your password"
+            />
+            <div class="user-login-reg__confirm-check">
+              <div class="checkbox-wrapper">
+                <input
+                  type="checkbox"
+                  id="reg-checkbox"
+                  class="user-login-reg__confirm-check-chekbox checkbox-reg"
+                />
+                <label
+                  for="reg-checkbox"
+                  class="user-login-reg__confirm-check-lable lable-reg"
+                ></label>
+              </div>
+
+              <span class="user-login-reg__confirm-check-txt">
+                By checking this message, I hereby confirm that I agree with the
+                Terms and Conditions, that I am 18 years old
+              </span>
+            </div>
+            <button type="submit" class="user-login-reg__submit-btn">
+              continue
+            </button>
+
+            <!-- BACKEND_IF: Show only on error -->
+            <div class="user-login-reg__error">
+              Boss! Ebu check hio phone number coz haiko sawa.
+            </div>
+            <!-- END_IF -->
+          </form>
+        </div>
+        <div class="user-login-reg__register">
+          <span class="user-login-reg__register-text"
+            >Do you have an account?
+          </span>
+          <a
+            href="./login-page.html"
+            class="user-login-reg__register-link user-login-reg-link"
+            >Sign In</a
+          >
+        </div>
+      </section>
+    </div>
+    <!-- <script src="./js/scripts.js"></script> -->
+  </body>
+</html>

@@ -1,0 +1,56 @@
+.deposit-payment {
+  &__caption {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 6px;
+  }
+
+  &__block {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+
+  &__item {
+    width: 134px;
+    height: 141px;
+    border-radius: 67px;
+    background-color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+
+    &-figure {
+      height: 40px;
+      display: flex;
+      margin-bottom: 18px;
+    }
+
+    &-img {
+      max-width: 70px;
+      max-height: 40px;
+      margin: auto;
+    }
+  }
+
+  &__title {
+    opacity: 0.4;
+    color: #141717;
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 2px;
+  }
+
+  &__subtitle {
+    color: #141717;
+    font-size: 13px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  @include media-max($xs) {
+    padding: 22px 20px 60px;
+  }
+}

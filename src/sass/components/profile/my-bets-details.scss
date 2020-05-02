@@ -1,0 +1,173 @@
+.my-bets-details{
+    padding-top: 20px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 30px;
+    color: #fff;
+}
+.my-bets-details-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $table-gret-bgc;
+}
+.my-bets-details-header-refresh{
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+.my-bets-details-header-refresh-txt{
+    font-size: 12px;
+    font-weight: 500;
+    display: block;
+    position: relative;
+    &::before{
+        display: block;
+        position: absolute;
+        left: -20px;
+        content: "";
+        width: 15px;
+        height: 15px;
+        background-image: url('../../../images/img/icons/refresh.svg');
+        // background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+    
+      }
+}
+.my-bets-details-header-list{
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.my-bets-details-header-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+flex-basis: 25%;
+}
+.my-bets-details-header-item-name{
+  font-weight: 500;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.my-bets-details-header-item-val{
+  display: block;
+  // margin: 0 auto;
+  font-size: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 90%;
+  text-align: center;
+  // border: 1px solid $primary-white-color;
+  background-color: $primary-white-color;
+  color: #000;
+  font-weight: 500;
+
+}
+.my-bets-details-events-title{
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.my-bets-details-events-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  // background-color: $main-body-color;
+}
+.my-bets-details-events-item{
+  padding: 5px;
+  border: 1px solid $table-gret-bgc;
+  border-radius: 5px;
+  // background-color: $table-gret-bg;
+  &:not(:last-child){
+    margin-bottom: 5px;
+  }
+}
+.my-bets-details-commands{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5px;
+  position: relative;
+  // border-bottom: 1px solid $main-body-color;
+  
+}
+.my-bets-details-command-name{
+  font-size: 10px;
+}
+.my-bets-details-commands-score{
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-top: 3px;padding-bottom: 3px;
+  padding-left: 5px;padding-right: 5px;
+  font-size: 10px;
+  font-weight: 700;
+   background-color: $primary-white-color;
+   color: #000;
+}
+.my-bets-details-params{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: $primary-white-color;
+  padding: 5px;
+  padding-bottom: 0;
+}
+.my-bets-details-params-item{
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+  font-size: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 5px;
+  font-weight: 700;
+   background-color: $primary-light-black-color;
+   border-radius: 3px;
+   @media (max-width:319px) {
+     width: 40%;
+     font-size: 8px;
+   }
+}
+.my-bets-details-events-item-stutus-wrapper{
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+}
+.my-bets-details-events-item-status-img{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
+/////status colors
+.status-pending{
+  background-color: $main-body-color;
+  color: #000;
+}
+.status-won{
+  background-color: #008000;
+  color: #fff;
+}
+.status-lost{
+  color: #fff;
+  background-color: #ff0000;
+}
+.status-cancelled{
+  color: #fff;
+  background-color: #ffa500;
+}

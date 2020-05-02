@@ -1,0 +1,383 @@
+.transactions {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 5px;
+
+  // table-layout: fixed;
+
+  &__tr::after {
+    @extend %icon;
+  }
+
+  &__th {
+    padding: 12px 20px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    &--bet-amount {
+      text-align: right;
+    }
+    &--id {
+      width: 10%;
+    }
+    &--date {
+      width: 20%;
+    }
+    &--win-amount {
+      width: 30%;
+    }
+    &--status {
+      width: 20%;
+    }
+    &--balance {
+      width: 20%;
+    }
+  }
+
+  &__td {
+    border-top: 1px solid #4c4c4c;
+    border-bottom: 1px solid #4c4c4c;
+    padding: 12px 20px;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 500;
+    white-space: nowrap;
+
+    &:first-child {
+      border-left: 1px solid #4c4c4c;
+      border-radius: 8px 0 0 8px;
+    }
+
+    &:last-child {
+      border-right: 1px solid #4c4c4c;
+      border-radius: 0 8px 8px 0;
+    }
+
+    &--bet-amount {
+      text-align: right;
+    }
+    &--id {
+      width: 10%;
+    }
+    &--date {
+      width: 20%;
+    }
+    &--win-amount {
+      width: 30%;
+    }
+    &--status {
+      width: 20%;
+    }
+    &--balance {
+      width: 20%;
+    }
+  }
+
+  &__tr--won &__td {
+    border-color: transparent;
+    background: transparentize($green, 0.9);
+  }
+
+  &__tr--won &__td--status {
+    color: $green;
+  }
+
+  &__tr--lost &__td {
+    border-color: transparent;
+    background: transparentize($danger, 0.95);
+  }
+
+  &__tr--lost &__td--status {
+    color: $danger;
+  }
+
+  &__icon {
+    font-size: 13px;
+    margin-right: 6px;
+    vertical-align: middle;
+    margin-top: -2px;
+    display: inline-block;
+    line-height: 1;
+  }
+
+  &__tr--lost &__icon {
+    font-size: 10px;
+    width: 12px;
+    text-align: center;
+  }
+
+  &__more-btn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 25px auto -75px;
+
+    border: 2px solid rgba(76, 76, 76, 0.6);
+    border-radius: 50%;
+    background-color: $dark;
+    
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+  }
+
+  @include media-max($sm) {
+    display: block;
+
+    tbody {
+      display: block;
+    }
+
+    &__tr {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+      max-height: 39px;
+      overflow: hidden;
+      position: relative;
+
+      &::after {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        margin-top: -2px;
+        font-size: 4px;
+        line-height: 1;
+        color: $gray;
+        content: "\e911";
+        transition: .2s ease-in-out;
+      }
+
+      &:first-child::after {
+        display: none;
+      }
+
+      &--active {
+        max-height: 300px;
+
+        &::after {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    &__th {
+      width: 50%; // 30%;
+
+      &--date, &--bet-amount, &--win-amount, &--odds, &--balance {
+        display: none;
+      }
+
+      &--status {
+        width: 50%; // 40%;
+      }
+    }
+
+    &__td {
+      width: 50%; // 30%;
+
+      &--date {
+        display: none;
+      }
+
+      &--date, &--bet-amount, &--win-amount, &--odds, &--balance {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        border-top: none;
+        font-weight: 500;
+        padding: 14px 0 13px;
+        margin: 0 20px;
+
+        &::before {
+          content: attr(data-caption);
+          color: #fff;
+          font-size: 10px;
+          font-weight: 300;
+        }
+
+        .transactions__tr--won &,
+        .transactions__tr--lost & {
+          background: transparent;
+          border-bottom: 1px solid #4c4c4c;
+        }
+      }
+
+      &--id {
+        order: 1;
+      }
+
+      &--bet-type {
+        order: 2;
+      }
+
+      &--status {
+        order: 3;
+        width: 50%; // 40%;
+      }
+
+      &--odds {
+        order: 4;
+        margin-top: 10px;
+      }
+
+      &--bet-amount {
+        order: 5;
+      }
+
+      &--win-amount {
+        order: 6;
+      }
+
+      &--date {
+        order: 7;
+      }
+
+      &--balance {
+        order: 8;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  @include media-max($xs) {
+    &__th, &__td {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    &__td {
+      &--bet-amount, &--win-amount, &--odds, &--date, &--balance {
+        margin: 0 10px;
+      }
+
+      &--odds {
+        margin-top: 10px;
+      }
+
+      &--balance {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.transactions-tabs {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0 35px 20px;
+
+  &__item {
+    background: transparent;
+    border: none;
+    padding: 0;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    position: relative;
+    transition: .2s ease-in-out;
+    white-space: nowrap;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -20px;
+      width: 0;
+      height: 2px;
+      background-color: $main;
+      transform: translateX(-50%);
+      transition: .2s ease-in-out;
+    }
+
+    &::before {
+      @extend %icon;
+    }
+
+    & + & {
+      margin-left: 30px;
+    }
+
+    &:hover, &:focus, &--active {
+      color: #fff;
+
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+  @include media-max($md) {
+    padding: 30px 35px 10px;
+    border-top: 1px solid #4c4c4c;
+
+    &__item {
+      color: #fff;
+      font-size: 12px;
+      line-height: 1.5;
+      font-weight: 300;
+      padding-left: 27px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 1px;
+        bottom: auto;
+        width: 16px;
+        height: 16px;
+        box-shadow: 0 1px 1px rgba(19, 31, 21, 0.1);
+        border-radius: 4px;
+        border: 1px solid #4c4c4c;
+        background-color: transparent;
+        transform: none;
+        transition: .2s ease-in-out;
+      }
+
+      &::before {
+        content: "\e910";
+        position: absolute;
+        line-height: 1;
+        top: 6px;
+        left: 4px;
+        color: #000;
+        background-color: transparent;
+        width: auto;
+        height: auto;
+        font-size: 8px;
+        margin: 0;
+        z-index: 1;
+        opacity: 0;
+        transition: .2s ease-in-out;
+      }
+
+
+      &:hover, &:focus, &--active {
+        color: #fff;
+
+        &::after {
+          width: 16px;
+          background: $main;
+          border: 1px solid $main;
+        }
+      }
+
+      &--active {
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  @include media-max($md) {
+    padding: 30px 20px 10px;
+  }
+
+}

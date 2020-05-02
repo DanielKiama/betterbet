@@ -1,0 +1,126 @@
+.header-banner-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: $primary-white-color;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-weight: 600;
+    font-size: 14px;
+
+    .header-banner__liga {
+        font-size: 16px;
+        @media (max-width:319px) {
+            font-size: 10px;
+            margin: 0 auto;
+            // width: 50%;
+        }
+    }
+
+    .date-time-wrapper {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .commands-info__command{
+        line-height: 15px;
+    }
+    .commands-info__wrapper-inside-score{
+        display: flex;
+    }
+
+    .header-banner__date {
+        margin-right: 10px;
+        font-weight: 400;
+        padding: 5px;
+        color: #141717;
+        border-radius: 10px;
+        @media (max-width:319px) {
+           margin: 0;
+           font-size: 10px;
+           padding: 0;
+           padding-left: 5px;
+           flex: 1;
+        }
+    }
+
+    .header-banner__time {
+        margin-right: 10px;
+        padding: 5px;
+        border-radius: 10px;
+        color: #141717;
+        @media (max-width:319px) {
+           margin: 0;
+           padding: 0;
+           padding-right: 5px;
+           font-size: 10px;
+           text-align: right;
+           flex: 1;
+        }
+    }
+
+    .commands-info__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 15px;
+        padding: 5px;
+        border-radius: 10px;
+        @media (max-width:319px) {
+            font-size: 10px;
+        }
+     
+    }
+    .commands-info__wrapper-inside-teams{
+        display: flex;
+        flex: 2;
+        // align-items: center;
+    }
+
+    .live-header {
+        margin-right: 46px;
+    }
+
+    .match-wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .vs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: 400;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 12px;
+    }
+}
+
+.header-banner__time--red {
+    color: red;
+    @media (max-width:319px) {       
+        text-align: center;
+     }
+}
+
+.banner-refresh {
+    align-self: flex-end;
+
+
+}
+
+.prebet {
+    margin-right: 8px;
+}
+
+.match-data--heading {
+    margin-right: 8px;
+}
+
+.header-banner__liga--live-game {
+    margin-right: 45px;
+}

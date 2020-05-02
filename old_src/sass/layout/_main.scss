@@ -1,0 +1,58 @@
+.main {
+  // flex: 1;
+  width: 100%;
+
+  @include media-min($md + 1px) {
+    width: calc(100% - 70px);
+    margin-left: 70px;
+
+    // &--fixed {
+    //   padding-left: 70px;
+    // }
+    &--fixed &__block {
+      padding-top: 77px; // 133px;
+    }
+  }
+  @include media-max($md) {
+    &--fixed &__block {
+      padding-top: 60px;
+    }
+  }
+
+  &__block {
+    display: flex;
+  }
+
+  &__content {
+    flex: 1;
+    padding: 20px 0 0;
+    width: calc(100% - 260px - 300px);
+    
+    @include media-min($md) {
+      margin-left: 20px;
+    }
+
+    & > * {
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  @include media-max($lg) {
+    &__content {
+      padding: 20px 20px 0 0;
+    }
+  }
+
+  @include media-max($md) {
+    &__content {
+      padding: 40px 20px 0 20px;
+    }
+  }
+
+  @include media-max($xs) {
+    &__content {
+      padding: 40px 8px 0 8px;
+    }
+  }
+}

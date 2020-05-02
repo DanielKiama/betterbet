@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Flooks-layout</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+              <div class="header-wrapper">
+                  <div class="header__first-mobile">
+                      <div class="header__burger">
+                          <a href="./mobile-menu.html" class="header__burger-link" role="button">Menu</a>
+                        </div>
+                        <div class="header__logo">
+                          <a href="./index.html" class="header__logo-link" >
+                            <img alt="Flooks" class="header__logo-img" alt="mobile-logo" src="./images/img/logo--mobile.svg">
+                          </a>
+                        </div>
+                  </div>  
+                  <div class="header__block">
+                    <div class="header__top">
+                      <a href="./login-page.html" role="button" class="header__btn-link" > Login </a>
+                      <a href="./register-page.html" role="button" class="header__btn-link" > Register </a>
+                    </div>  
+                  </div>
+              </div>
+              <div class="hr"></div>
+            </header>
+      <!-- //= ./html-components/header/header-sports.html -->
+      <div class="header-banner">
+          <div class="header-banner__wrapper header-banner__wrapper--sb header-banner__wrapper--weekly ">
+              <div class="header-banner__wrapper-side header-banner__wrapper-left">
+                  <span class="header-banner__name header-banner__name--main">Weekly</span>
+                  <span class="header-banner__name header-banner__name--big">Jackpot</span>
+              </div>
+              <div class="header-banner__wrapper-side header-banner__wrapper-right">
+                  <div class="flex-column-wrapper m-right-15">
+                          <span class="header-banner__wrapper-right-title">10,161,508</span>
+                          <span class="header-banner__wrapper-right-subtitle">ksh</span>
+                  </div>
+                  
+                  <div class=" header-wrapper-icon">
+                      <img src="../../images/img/icons/download--white.svg" alt="">
+                  </div>
+              </div>
+           
+      
+           
+          </div>
+          <div class="hr"></div>
+      
+      </div>
+      <main class="main">
+        <!-- //= ./html-components/buttons/quick-pick-btn.html -->
+
+        <!-- //////////// --> 
+        <div class="select-countdown-wrapper select-countdown-wrapper--weekly-jackpot">
+          <div class="selector-wrapper">
+            <select
+              class="game-type-selector type-selector"
+              name="game-type-selector"
+              id="game-type-selector-id"
+            >
+              <option selected="selected">Weekly Jackpot</option>
+              <option value="Mid-week jackpots" class="game-type-selector__option"
+                >Mid-week jackpots</option
+              >
+            </select>
+          </div>
+        
+          <div class="countdown">
+            <span class="countdown__jackpot">Jackpot closes in: </span>
+            <div class="countdown-group">
+              <div class="countdown__time">1d 3h : 56m</div>
+              <a class="countdown__btn">QUICK PICK</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bets-table bets-table--jackpot ">
+          <div class="bets-table-item-wrapper">
+        
+            <div
+              class="bets-table__betslip bets-table__betslip-js "
+              style="display: none"
+            >
+              <div class="bets-table__betslip-odds">
+                <span class="bets-table__betslip-odds-txt">ODDS:</span>
+                <span class="bets-table__betslip-odds-val">60532.2</span>
+              </div>
+              <button class="bets-table__betslip-btn">
+                <span class="bets-table__betslip-btn-txt">Betslip</span>
+                <span class="bets-table__betslip-btn-val bets-table__betslip-btn-val-js"
+                  >0</span
+                >
+              </button>
+            </div>
+            <ul class="bets-table__list">
+              <li class="bets-table__item">
+                <div class="bets-table__item-top">
+                  <div class="bets-table-sport">
+                    <div class="bets-table-sport-img-wrapper">
+                      <img
+                        class="bets-table-sport-img"
+                        src="../../images/img/games-icons/football.svg"
+                        alt=""
+                      />
+                    </div>
+        
+                    <span class="bets-table-sport-name">Soccer</span>
+                    <span class="bets-table-sport-beetwen">&#8722;</span>
+                    <span class="bets-table-sport-comp-type">FA liga</span>
+                    <span class="bets-table-sport-coma">, &#173; </span>
+                    <span class="bets-table-sport-country">England</span>
+                  </div>
+                  <div class="bets-table-timeline">
+                    <div class="bets-table-date">
+                      <span class="bets-table-date__day">11/02</span>
+                      <span class="bets-table__beetwen">/</span>
+                      <span class="bets-table-date__month">02,&#8194;</span>
+                    </div>
+                    <div class="bets-table-date-time">
+                      <span class="bets-table-date-time__hours">23:56</span>
+                      <span class="bets-table-date-time__beetwen">:</span>
+                      <span class="bets-table-date-time__minutes">55</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="bets-table__item-bottom">
+                  <div class="player-team">
+                    <span class="player-team__first player-team__item">tranmere</span>
+                    <span class="player-team__second player-team__item">fatword</span>
+                  </div>
+                  <div class="bets-table-odds-wrapper bets-table-odds-wrapper--jackpot ">
+                    <button class="odds-val__item btn-group">
+                      <span class="odds-val__item-num first">1</span>
+                      <span class="odds-val__item-num">2.02</span>
+                    </button>
+                    <button class="odds-val__item btn-group">
+                      <span class="odds-val__item-num first ">X</span>
+                      <span class="odds-val__item-num">2.02</span>
+                    </button>
+                    <button class="odds-val__item btn-group">
+                      <span class="odds-val__item-num first">2</span>
+                      <span class="odds-val__item-num">3.85</span>
+                    </button>
+                  </div>
+                </div>
+              </li>
+        
+              <li class="bets-table__item">
+                <div class="bets-table__item-top">
+                  <div class="bets-table-sport">
+                    <div class="bets-table-sport-img-wrapper">
+                      <img
+                        class="bets-table-sport-img"
+                        src="../../images/img/games-icons/football.svg"
+                        alt=""
+                      />
+                    </div>
+        
+                    <span class="bets-table-sport-name">Soccer</span>
+                    <span class="bets-table-sport-beetwen">&#8722;</span>
+                    <span class="bets-table-sport-comp-type">FA liga</span>
+                    <span class="bets-table-sport-coma">, &#173; </span>
+                    <span class="bets-table-sport-country">England</span>
+                  </div>
+                  <div class="bets-table-timeline">
+                    <div class="bets-table-date">
+                      <span class="bets-table-date__day">11/02</span>
+                      <span class="bets-table__beetwen">/</span>
+                      <span class="bets-table-date__month">02,&#8194;</span>
+                    </div>
+                    <div class="bets-table-date-time">
+                      <span class="bets-table-date-time__hours">23</span>
+                      <span class="bets-table-date-time__beetwen">:</span>
+                      <span class="bets-table-date-time__minutes">55</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="bets-table__item-bottom">
+                  <div class="player-team">
+                    <span class="player-team__first player-team__item">tranmere</span>
+                    <span class="player-team__second player-team__item">fatword</span>
+                  </div>
+                  <div class="bets-table-odds-wrapper bets-table-odds-wrapper--jackpot ">
+                    <button class="odds-val__item btn-group">
+                      <span class="odds-val__item-num first">1</span>
+                      <span class="odds-val__item-num">2.02</span>
+                    </button>
+                    <button class="odds-val__item btn-group">
+                      <span class="odds-val__item-num first">X</span>
+                      <span class="odds-val__item-num">2.02</span>
+                    </button>
+                    <button class="odds-val__item btn-group">
+                      <span class="odds-val__item-num first">2</span>
+                      <span class="odds-val__item-num">3.85</span>
+                    </button>
+                  </div>
+        
+              <li class="bets-table__item">
+                <div class="bets-table__item-top">
+                  <div class="bets-table-sport">
+                    <div class="bets-table-sport-img-wrapper">
+                      <img
+                        class="bets-table-sport-img"
+                        src="../../images/img/games-icons/football.svg"
+                        alt=""
+                      />
+                    </div>
+        
+                    <span class="bets-table-sport-name">Soccer</span>
+                    <span class="bets-table-sport-beetwen">&#8722;</span>
+                    <span class="bets-table-sport-comp-type">FA liga</span>
+                    <span class="bets-table-sport-coma">, &#173; </span>
+                    <span class="bets-table-sport-country">England</span>
+                  </div>
+                  <div class="bets-table-timeline">
+                    <div class="bets-table-date">
+                      <span class="bets-table-date__day">11/02</span>
+                      <span class="bets-table__beetwen">/</span>
+                      <span class="bets-table-date__month">02,&#8194;</span>
+                    </div>
+                    <div class="bets-table-date-time">
+                      <span class="bets-table-date-time__hours">23</span>
+                      <span class="bets-table-date-time__beetwen">:</span>
+                      <span class="bets-table-date-time__minutes">55</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="bets-table__item-bottom">
+                  <div class="player-team">
+                    <span class="player-team__first player-team__item">tranmere</span>
+                    <span class="player-team__second player-team__item">fatword</span>
+                  </div>
+                  <div class="bets-table-odds-wrapper bets-table-odds-wrapper--jackpot ">
+                    <button class="odds-val__item btn-group">
+                      <span class="odds-val__item-num first ">1</span>
+                      <span class="odds-val__item-num">2.02</span>
+                    </button>
+                    <button class="odds-val__item btn-group">
+                      <span class="odds-val__item-num first">X</span>
+                      <span class="odds-val__item-num">2.02</span>
+                    </button>
+                    <button class="odds-val__item btn-group">
+                      <span class="odds-val__item-num first">2</span>
+                      <span class="odds-val__item-num">3.85</span>
+                    </button>
+                  </div>
+                </div>
+              </li>
+        
+              <li class="bets-table__item">
+                <div class="bets-table__item-top">
+                  <div class="bets-table-sport">
+                    <div class="bets-table-sport-img-wrapper">
+                      <img
+                        class="bets-table-sport-img"
+                        src="../../images/img/games-icons/football.svg"
+                        alt=""
+                      />
+                    </div>
+        
+                    <span class="bets-table-sport-name">Soccer</span>
+                    <span class="bets-table-sport-beetwen">&#8722;</span>
+                    <span class="bets-table-sport-comp-type">FA liga</span>
+                    <span class="bets-table-sport-coma">, &#173; </span>
+                    <span class="bets-table-sport-country">England</span>
+                  </div>
+                  <div class="bets-table-timeline">
+                    <div class="bets-table-date">
+                      <span class="bets-table-date__day">11/02</span>
+                      <span class="bets-table__beetwen">/</span>
+                      <span class="bets-table-date__month">02,&#8194;</span>
+                    </div>
+                    <div class="bets-table-date-time">
+                      <span class="bets-table-date-time__hours">23</span>
+                      <span class="bets-table-date-time__beetwen">:</span>
+                      <span class="bets-table-date-time__minutes">55</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="bets-table__item-bottom">
+                  <div class="player-team">
+                    <span class="player-team__first player-team__item">tranmere</span>
+                    <span class="player-team__second player-team__item">fatword</span>
+                  </div>
+                  <div class="bets-table-odds-wrapper bets-table-odds-wrapper--jackpot ">
+                    <button class="odds-val__item btn-group">
+                      <span class="odds-val__item-num first">1</span>
+                      <span class="odds-val__item-num">2.02</span>
+                    </button>
+                    <button class="odds-val__item btn-group">
+                      <span class="odds-val__item-num first">X</span>
+                      <span class="odds-val__item-num">2.02</span>
+                    </button>
+                    <button class="odds-val__item btn-group">
+                      <span class="odds-val__item-num first">2</span>
+                      <span class="odds-val__item-num">3.85</span>
+                    </button>
+                  </div>
+                </div>
+              </li>
+        
+              <li class="bets-table__item">
+                <div class="bets-table__item-top">
+                  <div class="bets-table-sport">
+                    <div class="bets-table-sport-img-wrapper">
+                      <img
+                        class="bets-table-sport-img"
+                        src="../../images/img/games-icons/football.svg"
+                        alt=""
+                      />
+                    </div>
+        
+                    <span class="bets-table-sport-name">Soccer</span>
+                    <span class="bets-table-sport-beetwen">&#8722;</span>
+                    <span class="bets-table-sport-comp-type">FA liga</span>
+                    <span class="bets-table-sport-coma">, &#173; </span>
+                    <span class="bets-table-sport-country">England</span>
+                  </div>
+                  <div class="bets-table-timeline">
+                    <div class="bets-table-date">
+                      <span class="bets-table-date__day">11/02</span>
+                      <span class="bets-table__beetwen">/</span>
+                      <span class="bets-table-date__month">02,&#8194;</span>
+                    </div>
+                    <div class="bets-table-date-time">
+                      <span class="bets-table-date-time__hours">23</span>
+                      <span class="bets-table-date-time__beetwen">:</span>
+                      <span class="bets-table-date-time__minutes">55</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="bets-table__item-bottom">
+                  <div class="player-team">
+                    <span class="player-team__first player-team__item">tranmere</span>
+                    <span class="player-team__second player-team__item">fatword</span>
+                  </div>
+                  <div class="bets-table-odds-wrapper bets-table-odds-wrapper--jackpot ">
+                    <button class="odds-val__item btn-group">
+                      <span class="odds-val__item-num first">1</span>
+                      <span class="odds-val__item-num ">2.02</span>
+                    </button>
+                    <button class="odds-val__item btn-group">
+                      <span class="odds-val__item-num first">X</span>
+                      <span class="odds-val__item-num">2.02</span>
+                    </button>
+                    <button class="odds-val__item btn-group">
+                      <span class="odds-val__item-num first">2</span>
+                      <span class="odds-val__item-num">3.85</span>
+                    </button>
+                  </div>
+                </div>
+              </li>
+        
+              <li class="bets-table__item">
+                <div class="bets-table__item-top">
+                  <div class="bets-table-sport">
+                    <div class="bets-table-sport-img-wrapper">
+                      <img
+                        class="bets-table-sport-img"
+                        src="../../images/img/games-icons/football.svg"
+                        alt=""
+                      />
+                    </div>
+        
+                    <span class="bets-table-sport-name">Soccer</span>
+                    <span class="bets-table-sport-beetwen">&#8722;</span>
+                    <span class="bets-table-sport-comp-type">FA liga</span>
+                    <span class="bets-table-sport-coma">, &#173; </span>
+                    <span class="bets-table-sport-country">England</span>
+                  </div>
+                  <div class="bets-table-timeline">
+                    <div class="bets-table-date">
+                      <span class="bets-table-date__day">11/02</span>
+                      <span class="bets-table__beetwen">/</span>
+                      <span class="bets-table-date__month">02,&#8194;</span>
+                    </div>
+                    <div class="bets-table-date-time">
+                      <span class="bets-table-date-time__hours">23</span>
+                      <span class="bets-table-date-time__beetwen">:</span>
+                      <span class="bets-table-date-time__minutes">55</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="bets-table__item-bottom">
+                  <div class="player-team">
+                    <span class="player-team__first player-team__item">tranmere</span>
+                    <span class="player-team__second player-team__item">fatword</span>
+                  </div>
+                  <div class="bets-table-odds-wrapper bets-table-odds-wrapper--jackpot ">
+                    <button class="odds-val__item btn-group">
+                      <span class="odds-val__item-num first">1</span>
+                      <span class="odds-val__item-num">2.02</span>
+                    </button>
+                    <button class="odds-val__item btn-group">
+                      <span class="odds-val__item-num first">X</span>
+                      <span class="odds-val__item-num">2.02</span>
+                    </button>
+                    <button class="odds-val__item btn-group">
+                      <span class="odds-val__item-num first">2</span>
+                      <span class="odds-val__item-num">3.85</span>
+                    </button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--  -->
+        <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>BetSlip | Flooks</title>
+            <link rel="stylesheet" href="css/styles.css" />
+          </head>
+          <body>
+            <div class="wrapper">
+              <div class="betslip-page">
+                <header class="light-block__header light-block__header--bet-slip">
+                  <h3 class="light-block__title light-block__title--bet-slip">
+                    BetSlip
+                  </h3>
+                </header>
+                <form
+                  class="light-block__body light-block__body--bet-slip ng-untouched ng-pristine ng-invalid"
+                  novalidate=""
+                >
+                  <div class="bet-slip">
+                    <!-- <div class="bet-slip__inner">
+                      <div class="bet-slip__item">
+                        <button class="bet-slip__item-close" type="button"></button>
+                        <div class="bet-slip__item-inner">
+                          <div class="bet-slip__teams">
+                            <div class="bet-slip__team">
+                              <p class="bet-slip__team-name">Olympique Lyonnais</p>
+                            </div>
+                            vs
+                            <div class="bet-slip__team">
+                              <p class="bet-slip__team-name">Juventus Turin</p>
+                            </div>
+                          </div>
+        
+                          <div class="bet-slip__info">
+                            <p class="bet-slip__outcome">Game: <span>2</span></p>
+                          </div>
+        
+                          <div class="bet-slip__info">
+                            <p class="bet-slip__outcome">Your pick: <b>draw</b></p>
+                            <p class="bet-slip__odds">3.2</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div> -->
+        
+                    <div class="bet-slip-total">
+                      <table class="bet-slip-total__table">
+                        <tbody>
+                          <tr class="bet-slip-total__tr">
+                            <th class="bet-slip-total__th">Combination</th>
+                            <td class="bet-slip-total__td">0</td>
+                          </tr>
+                          <tr class="bet-slip-total__tr">
+                            <th class="bet-slip-total__th">Picked</th>
+                            <td class="bet-slip-total__td">1/15 MATCHES</td>
+                          </tr>
+                          <tr class="bet-slip-total__tr">
+                            <th class="bet-slip-total__th">Stake</th>
+                            <td class="bet-slip-total__td">30 KSH</td>
+                          </tr>
+                          <tr class="bet-slip-total__tr">
+                            <th class="bet-slip-total__th">Total Winnings</th>
+                            <td class="bet-slip-total__td">10,161,508.00 KSH</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+        
+                    <p class="bet-slip__error">Please login</p>
+                    <div class="berslip-wrapper-btn">
+                      <button class="bet-slip__btn" type="submit" disabled="">
+                        Place bet</button
+                      ><button class="bet-slip__clear" type="button">
+                        <span class="bet-slip__clear-icon icon-lost"></span> Clear betslip
+                      </button>
+                    </div>
+                    
+                  </div>
+                </form>
+              </div>
+            </div>
+          </body>
+        </html>
+      </main>
+      <!-- //= ./html-components/footer.html -->
+      <section class="users-footer">
+        <nav class="users-footer__nav">
+          <ul class="users-footer__list">
+            <li class="users-footer__item">
+              <a href="../index.html" class="users-footer__link users-footer__link--active">
+                <div class="users-footer__img-wrapper">
+                  <img
+                    src="./../images/img/users-footer/simple-house-thin.svg"
+                    alt=""
+                    class="users-footer__img"
+                  />
+                </div>
+                <span class="users-footer__link-txt">Home</span>
+              </a>
+            </li>
+            <li class="users-footer__item">
+              <a href="../betslip-page.html" class="users-footer__link">
+                <div class="users-footer__img-wrapper">
+                  <img
+                    src="./../images/img/users-footer/invoice.svg"
+                    alt=""
+                    class="users-footer__img"
+                  />
+                </div>
+      
+                <span class="users-footer__link-txt">Betslip</span>
+              </a>
+            </li>
+            <!-- <li class="users-footer__item">             
+                      <a href="#" class="users-footer__link">
+                        <div class="profile-footer-img-wrapper profile-footer-img-wrapper--user">
+                          <img src="../images/img/users-footer/userpic.png" alt="profile footer image" class="profile-footer-img">
+                        </div>
+                      </a>
+                    </li> -->
+            <li class="users-footer__item">
+              <a href="../last-week-jackpot.html" class="users-footer__link users-footer__change">
+                <div class="users-footer__img-wrapper">
+                  <img
+                    src="./../images/img/users-footer/Jackpot.svg"
+                    alt=""
+                    class="users-footer__img"
+                  />
+                </div>
+                <span class="users-footer__link-txt">Jackpot</span>
+              </a>
+            </li>
+            <li class="users-footer__item">
+              <a href="../my-account-page.html" class="users-footer__link">
+                <div class="users-footer__img-wrapper">
+                  <img
+                    src="./../images/img/users-footer/user-profile.svg"
+                    alt=""
+                    class="users-footer__img"
+                  />
+                </div>
+      
+                <span class="users-footer__link-txt my-account"
+                  >My&nbsp;Account</span
+                ></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- <div class="users-footer__decorate users-footer__decorate--light">   
+              </div> -->
+      </section>
+    </div>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>

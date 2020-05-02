@@ -1,0 +1,96 @@
+.tickets {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 5px;
+
+  &__th {
+    padding: 12px 20px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &--status {
+      text-align: right;
+    }
+  }
+
+  &__td {
+    border-top: 1px solid #4c4c4c;
+    border-bottom: 1px solid #4c4c4c;
+    padding: 12px 20px;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 500;
+
+    &:first-child {
+      border-left: 1px solid #4c4c4c;
+      border-radius: 8px 0 0 8px;
+    }
+
+    &:last-child {
+      border-right: 1px solid #4c4c4c;
+      border-radius: 0 8px 8px 0;
+    }
+
+    &--id {
+      width: 91px;
+      white-space: nowrap;
+    }
+
+    &--status {
+      width: 100px;
+      white-space: nowrap;
+    }
+  }
+
+  &__tr--resolved &__td {
+    border-color: transparent;
+    background: transparentize($green, 0.9);
+  }
+
+  &__tr--resolved &__td--status {
+    color: $green;
+  }
+
+  &__icon {
+    font-size: 13px;
+    margin-right: 6px;
+    vertical-align: middle;
+    margin-top: -2px;
+    display: inline-block;
+    line-height: 1;
+  }
+
+  &__more-btn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgba(76, 76, 76, 0.6);
+    border-radius: 50%;
+    background-color: $dark;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 25px auto -75px;
+  }
+
+  @include media-max($sm) {
+    &__th--date, &__td--date {
+      display: none;
+    }
+
+    &__td {
+      padding: 12px 10px;
+
+      &--id {
+        width: auto;
+      }
+    }
+
+    &__th {
+      padding: 12px 10px;
+    }
+  }
+}

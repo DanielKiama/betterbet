@@ -1,0 +1,27 @@
+.users-footer-menu{
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #000;
+    font-size: 14px;
+}
+.users-footer-menu-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.users-footer-menu-item{
+  margin-bottom: 10px;
+  width: 50%;
+  text-align: center;
+}
+.users-footer-menu-link{
+  color: #000;
+    font-size: 12px;
+}
+.users-footer-menu-desr{
+font-size: 10px;
+text-align: center;
+}

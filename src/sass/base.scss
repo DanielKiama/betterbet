@@ -1,0 +1,76 @@
+body,html{
+  background-color: $main-body-color;
+}
+body {
+  font-size: 16px !important;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif !important;
+  box-sizing: border-box !important;
+  width: 100%;
+  height: 100%;
+  // background-color: $primary-dark-grey-color !important; 
+}
+.wrapper {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+  background-color: $primary-light-dark-black-color;
+  &--black{
+    background-color: $primary-light-dark-black-color;
+  }
+  
+}
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
+.hr {
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  box-sizing: border-box;
+  height: 4px;
+  background-color: $primary-light-dark-black-color;
+}
+////flex diretions
+.flex-row-wrapper{
+  display: flex;
+  width: 100%;
+  box-sizing: border-box !important;
+}
+.flex-column-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+////margins&paddings
+.m-right-15{
+  margin-right: 30px;
+  @media (max-width:319px) {
+    margin-right: 15px;
+  }
+}
+.m-right-30{
+  margin-right: 30px;
+}
+
+///colors
+.yellow-bgc{
+  background-color: $primary-yellow-color !important;
+}
+.yellow-text{
+  font-weight: 700;
+  color: $primary-yellow-color;
+}
+.white-bgc{
+  background-color: #ffffff !important;
+  // min-height: 100vh;
+}
+.main{
+  background-color: $primary-light-dark-black-color;
+}

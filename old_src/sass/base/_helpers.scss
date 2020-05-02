@@ -1,0 +1,125 @@
+@import "variables";
+
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.a-l {
+  text-align: left;
+}
+
+.a-c {
+  text-align: center;
+}
+
+.a-r {
+  text-align: right;
+}
+
+.a-j {
+  text-align: justify;
+}
+
+.va-t {
+  vertical-align: top;
+}
+
+.va-m {
+  vertical-align: middle;
+}
+
+.va-b {
+  vertical-align: bottom;
+}
+
+.f-l {
+  float: left;
+}
+
+.f-r {
+  float: right;
+}
+
+@each $class, $style in (p, padding), (pt, padding-top), (pr, padding-right), (pb, padding-bottom), (pl, padding-left),
+  (m, margin), (mt, margin-top), (mr, margin-right), (mb, margin-bottom), (ml, margin-left) {
+  @for $i from 1 through 100 {
+    $value: $i * 10;
+    .#{$class}-#{$value} {
+      #{$style}: #{$value}px;
+    }
+  }
+}
+
+@mixin for-retina {
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { @content; }
+}
+
+@mixin for-width($width) {
+  @media only screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin from-width($width) {
+  @media only screen and (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin for-27-inch {
+  @include from-width($inch-27-width) {
+    @content;
+  }
+}
+
+@mixin for-21-inch {
+  @include from-width($inch-21-width) {
+    @content;
+  }
+}
+
+@mixin for-15-inch {
+  @include from-width($inch-15-width) {
+    @content;
+  }
+}
+
+@mixin for-13-inch {
+  @include from-width($inch-13-width) {
+    @content;
+  }
+}
+
+@mixin for-mobile {
+  @include for-width($mobile-max-width) {
+    @content;
+  }
+}
+
+@mixin for-phone {
+  @include for-width($phone-max-width) {
+    @content;
+  }
+}
+
+@function rem($size) {
+  $remSize: $size / $font-size;
+  @return #{$remSize}rem;
+}
+
+@mixin visually-hidden(){
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;}
+.visually-hidden {
+  @include visually-hidden();
+}

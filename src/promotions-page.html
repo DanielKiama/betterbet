@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promotions | Flooks</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header-wrapper">
+          <div class="header__first-mobile">
+            <div class="header__burger">
+              <a
+                href="./mobile-menu.html"
+                class="header__burger-link"
+                role="button"
+              >Menu</a>
+            </div>
+            <div class="header__logo">
+              <a href="./index.html" class="header__logo-link">
+                <img
+                  alt="Flooks"
+                  class="header__logo-img"
+                  alt="mobile-logo"
+                  src="./images/img/logo--mobile.svg"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="header__block">
+            <div class="header__top">
+              <a
+                href="./login-page.html"
+                role="button"
+                class="header__btn-link"
+              >
+                Login
+              </a>
+              <a
+                href="./register-page.html"
+                role="button"
+                class="header__btn-link"
+              >
+                Register
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="promotions-page">
+        <section class="light-block light-block--info">
+          <header class="light-block__header">
+            <div class="light-block__header-left">
+              <h2 class="light-block__title">Promotions</h2>
+            </div>
+          </header>
+          <div class="light-block__body">
+            <div class="light-block-tabs">
+              <div class="selector-wrapper">
+                <!-- BACKEND_NOTE: <options> below hold url to redirect to in a "value" atribute -->
+                <select
+                  class="date-type-selector type-selector"
+                  name="game-type-selector"
+                  id="game-type-selector-id"
+                  onchange="window.location.replace(this.value)"
+                >
+                  <option
+                    value="/promotions-page.html"
+                    class="date-type-selector__option"
+                    >All promotions</option
+                  >
+                  <option
+                    value="/promotions-page.html?only=active"
+                    class="date-type-selector__option"
+                  >
+                    Active</option
+                  >
+                  <option
+                    value="/promotions-page.html?only=past"
+                    class="date-type-selector__option"
+                    >Past</option
+                  >
+                </select>
+              </div>
+            </div>
+            <div class="promotion">
+              <!---->
+              <section>
+                <div class="promotion__header">
+                  <div class="promotion__header-section">
+                    <!---->
+                    <h3 class="promotion__headline">
+                      <span class="promotion__headline-bold"> Joining </span
+                      ><span> Bonus </span>
+                    </h3>
+                  </div>
+                  <!---->
+                  <div class="promotion__header-section">
+                    <p class="promotion__dates">
+                      <!---->–
+                      <!---->
+                    </p>
+                  </div>
+                  <!---->
+                  <div class="promotion__header-section">
+                    <p class="promotion__status promotion__status--past">
+                      FINISHED
+                    </p>
+                  </div>
+                </div>
+                <div class="promotion__text-wrapper"><!----></div>
+                <!----><img
+                  class="promotion__image"
+                  src="https://content.flooks.com/content/promotions/joining.png"
+                />
+              </section>
+            </div>
+            <div class="promotion">
+              <section>
+                <div class="promotion__header">
+                  <div class="promotion__header-section">
+                    <!---->
+                    <h3 class="promotion__headline">
+                      <span class="promotion__headline-bold"> Deposit </span
+                      ><span> Bonus </span>
+                    </h3>
+                  </div>
+                  <!---->
+                  <div class="promotion__header-section">
+                    <p class="promotion__dates">
+                      <!---->–
+                      <!---->
+                    </p>
+                  </div>
+                  <!---->
+                  <div class="promotion__header-section">
+                    <p class="promotion__status promotion__status--active">
+                      ONGOING
+                    </p>
+                  </div>
+                </div>
+                <div class="promotion__text-wrapper">
+                  <!---->
+                  <p class="promotion__text">
+                    <span
+                      >You can only participate in one Wekapata bonus per day
+                      either by depositing KSH 50 or KSH 250. The 50 bob bonus
+                      is only issued once per day while 10 Bob bonus is issued
+                      up to 3 times a day. </span
+                    ><!----><!---->
+                  </p>
+                </div>
+                <!----><img
+                  class="promotion__image"
+                  src="https://content.flooks.com/content/promotions/deposit.png"
+                />
+              </section>
+            </div>
+            <div class="promotion">
+              <!---->
+              <section>
+                <div class="promotion__header">
+                  <div class="promotion__header-section">
+                    <!---->
+                    <h3 class="promotion__headline">
+                      <span class="promotion__headline-bold"> Refferal </span
+                      ><span> Bonus </span>
+                    </h3>
+                  </div>
+                  <!---->
+                  <div class="promotion__header-section">
+                    <p class="promotion__dates">
+                      <!---->–
+                      <!---->
+                    </p>
+                  </div>
+                  <!---->
+                </div>
+                <div class="promotion__text-wrapper">
+                  <!---->
+                  <p class="promotion__text">
+                    <span>Suspended</span
+                    ><!----><!---->
+                  </p>
+                </div>
+                <!----><img
+                  class="promotion__image"
+                  src="https://content.flooks.com/content/promotions/ref.png"
+                />
+              </section>
+            </div>
+            <div class="promotion">
+              <!---->
+              <section>
+                <div class="promotion__header">
+                  <div class="promotion__header-section">
+                    <!---->
+                    <h3 class="promotion__headline">
+                      <span class="promotion__headline-bold"> Cheza </span
+                      ><span> Kama Wewe </span>
+                    </h3>
+                  </div>
+                  <!---->
+                  <div class="promotion__header-section">
+                    <p class="promotion__dates">
+                      <!---->–
+                      <!---->
+                    </p>
+                  </div>
+                  <!---->
+                  <div class="promotion__header-section">
+                    <p class="promotion__status promotion__status--past">
+                      FINISHED
+                    </p>
+                  </div>
+                </div>
+                <div class="promotion__text-wrapper">
+                  <!---->
+                  <p class="promotion__text">
+                    <span
+                      >All 8 cash bets have to be placed on the same day to get
+                      the bonus. Jackpot Bets are not included in this
+                      promotion</span
+                    ><!----><!---->
+                  </p>
+                </div>
+                <!----><img
+                  class="promotion__image"
+                  src="https://content.flooks.com/content/promotions/chezakamawewe.png"
+                />
+              </section>
+            </div>
+            <div class="promotion">
+              <!---->
+              <section>
+                <div class="promotion__header">
+                  <div class="promotion__header-section">
+                    <!---->
+                    <h3 class="promotion__headline">
+                      <span class="promotion__headline-bold"> Jackpot </span
+                      ><span> Bonus </span>
+                    </h3>
+                  </div>
+                  <!---->
+                  <div class="promotion__header-section">
+                    <p class="promotion__dates">
+                      <!---->–
+                      <!---->
+                    </p>
+                  </div>
+                  <!---->
+                  <div class="promotion__header-section">
+                    <p class="promotion__status promotion__status--active">
+                      ONGOING
+                    </p>
+                  </div>
+                </div>
+                <div class="promotion__text-wrapper">
+                  <!---->
+                  <p class="promotion__text">
+                    <span
+                      >10 bob bonus for every Jackpot bet. Maximum 3 times a
+                      day.</span
+                    ><!----><!---->
+                  </p>
+                </div>
+                <!----><img
+                  class="promotion__image"
+                  src="https://content.flooks.com/content/promotions/jackpotpromo.png"
+                />
+              </section>
+            </div>
+            <div class="promotion">
+              <!---->
+              <section>
+                <div class="promotion__header">
+                  <div class="promotion__header-section">
+                    <!---->
+                    <h3 class="promotion__headline">
+                      <span class="promotion__headline-bold"> Changamkia </span
+                      ><span> Vales </span>
+                    </h3>
+                  </div>
+                  <!---->
+                  <div class="promotion__header-section">
+                    <p class="promotion__timer">
+                      <span> 0d 0h : 0m </span>
+                    </p>
+                  </div>
+                  <div class="promotion__header-section">
+                    <p class="promotion__dates">
+                      <!----><span> 13 Jan </span>–
+                      <!----><span> 13 Feb </span>
+                    </p>
+                  </div>
+                  <!---->
+                  <div class="promotion__header-section">
+                    <p class="promotion__status promotion__status--past">
+                      FINISHED
+                    </p>
+                  </div>
+                </div>
+                <div class="promotion__text-wrapper">
+                  <!---->
+                  <p class="promotion__text">
+                    <span
+                      >This promotion is based on the total amount of Shinda
+                      Points one will have accumulated by 13/02/2020. There will
+                      be a total of 14 winners with the top player being awarded
+                      KSH 14,000 and the rest KSH 5,000. How to calculate your
+                      Flooks Shinda Points: Flooks Shinda Point = Total Stake x
+                      0.1 x (1- (1/total Odds)). For Example: Player A total
+                      odds is 5 and Player B total odds is 1.2 and they both
+                      stake KES 20,000 the points awarded will be as follows:
+                      Player A Flooks Shinda Points: 20,000 x 0.1 x (1- (1/5)) =
+                      1,600 Shinda Points. Player B Flooks Shinda Points: 20,000
+                      x 0.1 x (1- (1/1.2)) = 333 Shinda Points. How to know your
+                      Shinda points? On SMS. Send the word BALANCE to 29444 On
+                      Web. When logged in click on your name/profile picture on
+                      the top right corner of the screen. Bets placed using
+                      bonus DO NOT earn you points. Cancelled bets DO NOT earn
+                      you points.</span
+                    ><!----><!---->
+                  </p>
+                </div>
+                <!----><img
+                  class="promotion__image"
+                  src="https://content.flooks.com/content/promotions/valentines.jpeg"
+                />
+              </section>
+            </div>
+            <div class="promotion">
+              <!---->
+              <section>
+                <div class="promotion__header">
+                  <div class="promotion__header-section">
+                    <!---->
+                    <h3 class="promotion__headline">
+                      <span class="promotion__headline-bold"> Cheza </span
+                      ><span> Kama Wewe </span>
+                    </h3>
+                  </div>
+                  <!---->
+                  <div class="promotion__header-section">
+                    <p class="promotion__dates">
+                      <!---->–
+                      <!---->
+                    </p>
+                  </div>
+                  <!---->
+                  <div class="promotion__header-section">
+                    <p class="promotion__status promotion__status--active">
+                      ONGOING
+                    </p>
+                  </div>
+                </div>
+                <div class="promotion__text-wrapper">
+                  <!---->
+                  <p class="promotion__text">
+                    <span
+                      >All 5 cash bets have to be placed on the same day with
+                      minimum odds of 1.5 to get the bonus. Jackpot Bets are not
+                      included in this promotion</span
+                    ><!----><!---->
+                  </p>
+                </div>
+                <!----><img
+                  class="promotion__image"
+                  src="https://content.flooks.com/content/promotions/5thbet.jpeg"
+                />
+              </section>
+            </div>
+            <!---->
+          </div>
+        </section>
+      </div>
+
+      <section class="users-footer">
+        <nav class="users-footer__nav">
+          <ul class="users-footer__list">
+            <li class="users-footer__item">
+              <a href="#" class="users-footer__link">
+                <div class="users-footer__img-wrapper">
+                  <img
+                    src="./../images/img/users-footer/simple-house-thin.svg"
+                    alt=""
+                    class="users-footer__img"
+                  />
+                </div>
+                <span class="users-footer__link-txt">Home</span>
+              </a>
+            </li>
+            <li class="users-footer__item">
+              <a href="#" class="users-footer__link">
+                <div class="users-footer__img-wrapper">
+                  <img
+                    src="./../images/img/users-footer/invoice.svg"
+                    alt=""
+                    class="users-footer__img"
+                  />
+                </div>
+
+                <span class="users-footer__link-txt">Betslip</span>
+              </a>
+            </li>
+            <!-- <li class="users-footer__item">             
+                <a href="#" class="users-footer__link">
+                  <div class="profile-footer-img-wrapper profile-footer-img-wrapper--user">
+                    <img src="../images/img/users-footer/userpic.png" alt="profile footer image" class="profile-footer-img">
+                  </div>
+                </a>
+              </li> -->
+            <li class="users-footer__item">
+              <a href="#" class="users-footer__link users-footer__change">
+                <div class="users-footer__img-wrapper">
+                  <img
+                    src="./../images/img/users-footer/Jackpot.svg"
+                    alt=""
+                    class="users-footer__img"
+                  />
+                </div>
+                <span class="users-footer__link-txt">Jackpot</span>
+              </a>
+            </li>
+            <li class="users-footer__item">
+              <a href="../my-account-page.html" class="users-footer__link">
+                <div class="users-footer__img-wrapper">
+                  <img
+                    src="./../images/img/users-footer/user-profile.svg"
+                    alt=""
+                    class="users-footer__img"
+                  />
+                </div>
+
+                <span class="users-footer__link-txt">My Account</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- <div class="users-footer__decorate users-footer__decorate--light">   
+        </div> -->
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1436 @@
+.bets {
+  // width: 100%;
+  table-layout: fixed;
+
+  &__th {
+    padding: 10px 10px;
+    color: #070a14;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+
+    .bets__tr--aligning & {
+      padding-top: 0;
+      padding-bottom: 0;
+      height: 0;
+    }
+
+    &--date {
+      width: 53px;
+    }
+    &--date-live {
+      width: 73px;
+    }
+    &--league {
+      text-align: left;
+    }
+
+    &--score {
+      width: 30px;
+    }
+    &--score-empty {
+      width: 0px;
+    }
+
+    &--1x, &--x, &--2x,
+    &--selection {
+      padding-left: 3px;
+      padding-right: 3px;
+    }
+
+    @include media-max($md) {
+      &--stat,
+      &--bets {
+        display: none;
+      }
+    }
+
+    &--selection {
+      width: 79px;
+    }
+    &--stat {
+      width: 35px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    &--bets {
+      // width: 53px;
+      width: 42px;
+      position: relative;
+    }
+
+    @include media-min($lg + 1px) {
+      .bets thead .bets__tr:nth-child(1) & {
+        padding-bottom: 3px;
+      }
+      .bets thead .bets__tr:nth-child(2) & {
+        padding-top: 2px;
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  &__league-block {
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+  }
+
+  &__country {
+    display: inline-flex;
+    margin-right: 30px;
+    align-items: center;
+
+    &-img {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    &-name {
+      color: #141717;
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: none;
+      margin: 0;
+    }
+  }
+
+  &__league {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+
+    &-img {
+      max-width: 15px;
+      max-height: 15px;
+      margin-right: 10px;
+    }
+
+    &-name {
+      color: #141717;
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: none;
+      margin: 0;
+    }
+
+    &-arrow {
+      margin-left: 10px;
+      font-size: 4px;
+      color: #070a14;
+    }
+  }
+
+  &__td {
+    padding: 15px;
+    vertical-align: middle;
+
+    @include media-max($prevlg) {
+      padding: 10px;
+    }
+
+    &--date {
+      position: relative;
+      padding-right: 0;
+
+      @include media-max($md) {
+        .bets__tr--flex-column-mobile & {
+          order: 0;
+          display: flex;
+
+          width: 100%;
+          padding: 10px 0;
+          position: relative;
+
+          text-align: left;
+          border-bottom: 1px solid #E3E3E3;
+        }
+        .bets__tr--flex-column-mobile:first-child & {
+          border-top: 1px solid #E3E3E3;
+        }
+      }
+    }
+    &--date-live {
+      @include media-max($prevlg) {
+        // min-width: 70px;
+        padding-right: 25px; // 40px; 0px
+      }
+    }
+
+    &--1x, &--x, &--2x,
+    &--selection {
+      padding-left: 3px;
+      padding-right: 3px;
+    }
+
+    &--clubs {
+      // width: 100%;
+      // width: 100px;
+      padding-left: 7px;
+      @include media-min(1400px) {
+        padding-left: 9px;
+      }
+
+      @include media-max($md) {
+        .bets__tr--flex-column-mobile & {
+          order: 1;
+
+          width: 50%;
+          padding: 15px 13px;
+          position: relative;
+        }
+      }
+    }
+
+    &--stat {
+      text-align: center;
+
+      @include media-max($md) {
+        .bets__tr--flex-column-mobile & {
+          // position: absolute;
+          // top: 70px;
+          // right: 70px;
+          width: 20%;
+          margin-left: auto;
+          margin-right: 10px;
+          padding: 0;
+
+          position: static;
+          order: 3;
+        }
+      }
+      @include media-max($sm) {
+        .bets__tr--flex-column-mobile & {
+          // position: absolute;
+          // top: 88px;
+          // right: 70px;
+          width: 20%;
+          margin-left: auto;
+          margin-right: 10px;
+          padding: 0;
+
+          position: static;
+          order: 3;
+        }
+      }
+    }
+    &--bets {
+      text-align: center;
+
+      @include media-max($md) {
+        .bets__tr--flex-column-mobile & {
+          // position: absolute;
+          // top: 70px;
+          // right: 20px;
+          width: auto;
+          padding: 0 20px 0 0;
+          position: static;
+          order: 3;
+          text-align: left;
+        }
+      }
+      @include media-max($sm) {
+        .bets__tr--flex-column-mobile & {
+          // position: absolute;
+          // top: 88px;
+          // right: 20px;
+          width: auto;
+          padding: 0 20px 0 0;
+          position: static;
+          order: 3;
+          text-align: left;
+        }
+      }
+    }
+
+    &--score {
+      text-align: center; // right;
+
+      @include media-max($md) {
+        .bets__tr--flex-column-mobile & {
+          order: 2;
+          width: 10%;
+        }
+      }
+    }
+
+    &--selection {
+      @include media-max($md) {
+        .bets__tr--flex-column-mobile & {
+          order: 3;
+        }
+      }
+    }
+
+    &--1 {
+      width: 100%;
+      padding-right: 0;
+      padding-left: 0;
+    }
+    &--2 {
+      width: 48%;
+      margin-right: 4%;
+      padding-right: 0;
+      padding-left: 0;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+
+      @include media-max($xs) {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+    &--3 {
+      width: 32%;
+      margin-right: 2%;
+      padding-right: 0;
+      padding-left: 0;
+
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+
+      @include media-max($xs) {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+    &--left {
+      margin-right: auto;
+      padding-left: 0;
+      width: 10%;
+
+      @include media-max($sm) {
+        order: 0;
+        width: 50%;
+      }
+    }
+    &--center {
+      width: 80%;
+
+      @include media-max($sm) {
+        padding-left: 0;
+        width: 100%;
+        order: 2;
+      }
+    }
+    &--right {
+      margin-left: auto;
+      padding-right: 0;
+      width: 10%;
+      padding-top: 0;
+      padding-bottom: 0;
+
+      @include media-max($sm) {
+        padding-left: 0;
+        width: 50%;
+        order: 1;
+      }
+    }
+
+    &:first-child {
+      border-radius: 6px 0 0 6px;
+    }
+
+    &:last-child {
+      border-radius: 0 6px 6px 0;
+    }
+
+    &--modal {
+      background: transparent !important;
+      text-align: center;
+      padding-top: 0;
+      // padding-bottom: 0;
+    }
+
+    &--empty {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+    &--full-width {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &__time {
+    color: #141717;
+    margin-bottom: 6px;
+
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: bold;
+    color: #141717;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    @include media-max($md) {
+      order: 1;
+      margin-bottom: 0;
+    }
+  }
+
+  &__date, &__id {
+    margin: 0;
+    white-space: nowrap;
+
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: normal;
+    color: #141717;
+  }
+
+  &__date {
+    @include media-max($md) {
+      margin-bottom: 8px;
+    }
+    .bets__td--right & {
+      text-align: right;
+    }
+  }
+
+  &__date-time {
+    @include media-max($md) {
+      width: 50%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      &--w50 {
+        width: 50%;
+        &::before {
+          content: none;
+        }
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        width: 1px;
+        background-color: #e3e3e3;
+        height: 31px;
+        top: 50%;
+        margin-top: -15px;
+      }
+    }
+  }
+
+  &__id {
+    margin-top: 2px;
+
+    @include media-max($md) {
+      .bets__tr--flex-column-mobile & {
+        position: relative;
+        margin-top: 0;
+        width: 50%;
+        text-align: center;
+
+        &--w50 {
+          width: 50%;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          width: 1px;
+          background-color: #e3e3e3;
+          height: 31px;
+          top: 50%;
+          margin-top: -15px;
+        }
+
+        &-caption {
+          display: block;
+          margin-bottom: 8px;
+        }
+
+        &-value {
+          display: block;
+          font-weight: bold;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  &__match-time-mobile {
+    width: 32%;
+    margin-bottom: 0;
+    text-align: center;
+
+    @include media-min($md) {
+      display: none;
+    }
+  }
+
+  &__live {
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    right: 15px;
+    width: 25px; // 15px;
+    height: 15px;
+    border-radius: 2px;
+    background-color: $danger;
+    color: #fff;
+    font-size: 8px;
+    line-height: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+
+    @include media-min(1280px) {
+      right: -1px;
+    }
+    @include media-min(1400px) {
+      right: -2px;
+    }
+    @include media-min(1600px) {
+      right: -5px;
+    }
+  }
+  .bets__td--right &__live {
+    position: static;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: auto;
+  }
+
+  &__clubs {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+
+    &--justify-center {
+      justify-content: center;
+
+      @include media-max($sm) {
+        justify-content: space-between;
+      }
+    }
+
+    @include media-max(1120px) {
+      &:not(&--justify-center) {
+        display: none;
+      }
+    }
+  }
+
+  &--modal {
+    width: 100%;
+  }
+
+  &__clubs-logos {
+    display: flex;
+    margin-right: 15px;
+
+    @include media-max($prevlg) {
+      margin-right: 5px;
+    }
+
+    &--center {
+      flex-grow: 1;
+      margin-right: 0;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    &--left {
+      margin-left: 15px;
+      margin-right: 15px;
+      
+      @include media-min(1280px) {
+        margin-left: 17px;
+        margin-right: 17px; // 62px;
+      }
+    }
+    &--right {
+      margin-left: 15px;
+      margin-right: 15px;
+      
+      @include media-min(1280px) {
+        margin-left: 17px; // 62px;
+        margin-right: 17px;
+      }
+    }
+  }
+
+  &__clubs-figure {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid $light3;
+    background-color: $light1;
+    display: flex;
+    margin: 0;
+    flex-shrink: 0;
+
+    @include media-max($md) {
+      background-color: #fff;
+    }
+    @include media-min(1280px) {
+      .bets__clubs-logos--left &,
+      .bets__clubs-logos--right & {
+        width: 60px;
+        height: 60px;
+      }
+    }
+
+    & + & {
+      margin-left: -5px;
+    }
+
+    &:first-child {
+      z-index: 1;
+    }
+
+    .bets__club-wrapper & {
+      margin-right: 10px;
+    }
+  }
+
+  &__clubs-img {
+    max-height: 20px;
+    max-width: 20px;
+    margin: auto;
+  }
+
+  &__clubs-names {
+    &--left {
+      flex-grow: 1;
+      box-sizing: border-box;
+      text-align: right;
+    }
+    &--right {
+      flex-grow: 1;
+      box-sizing: border-box;
+    }
+  }
+
+  &__clubs-name {
+    margin: 0;
+
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 400;
+    color: #313535;
+
+    @include media-max($md) {
+      max-height: 30px;
+      // display: flex;
+      // align-items: center;
+
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      & + & {
+        margin-top: -6px;
+      }
+    }
+    @include media-min($md + 1px) {
+      max-height: 15px;
+
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      & + & {
+        margin-top: 4px;
+      }
+    }
+
+    &--active {
+      // color: #141717;
+      font-weight: bold;
+    }
+    &--competition {
+      margin: 16px auto 4px;
+
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 15px;
+      color: #313535;
+    }
+    // &--overflowing {
+    //   position: relative;
+    // }
+    // &--overflowing::after {
+    //   content: '...';
+    //   position: absolute;
+    //   bottom: 0;
+    //   right: 0;
+
+    //   font-size: 12px;
+    //   line-height: 15px;
+    // }
+    .bets__clubs--justify-center & {
+      // width: 140px;
+      width: calc(50% - 17px - 60px - 17px); // - 50px ?
+      // flex-grow: 1;
+
+      font-weight: bold;
+
+      &:first-child {
+        text-align: right;
+      }
+      
+      // @include media-max($prevlg) {
+      //   width: 120px;
+      // }
+      // @include media-min($prevlg + 1px) {
+      //   width: 180px;
+      // }
+      // @include media-min(1600px) {
+      //   width: 250px;
+      // }
+      // @include media-min(1920px) {
+      //   width: 370px;
+      // }
+    }
+  }
+
+  &__score-item {
+    color: #070a14;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0;
+    white-space: nowrap;
+
+    &--active {
+      color: #141717;
+      font-weight: 600;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 3px;
+        left: -15px;
+        
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 3.5px 0 3.5px 6px;
+        border-color: transparent transparent transparent #141717;
+      }
+    }
+
+    & + & {
+      margin-top: 4px;
+    }
+
+    .bets__clubs--justify-center & {
+      text-align: right;
+    }
+  }
+
+  &__btn {
+    width: 53px; // 73px;
+    height: 34px; // 40px;
+    border-radius: 8px;
+    border: 1px solid #ececec;
+    background-color: #fff;
+    color: #070a14;
+    font-size: 12px;
+    font-weight: 700;
+    transition: .2s ease-in-out;
+    z-index: 1;
+
+    &--3 {
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+    &:not(&--3) {
+      width: 73px;
+    }
+    &:disabled {
+      background-image: url('../images/icons/lock.svg');
+      background-size: 18px 18px;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+
+    &--up:not(:disabled) {
+      border: 1px solid $green;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 3.5px 4px 3.5px;
+        border-color: transparent transparent $green transparent;
+        margin-right: 5px;
+      }
+      &.bets__btn--3::before {
+        display: inherit;
+        position: absolute;
+        left: 6px;
+        // margin-top: 5px;
+        top: 50%;
+        margin-top: -2px;
+      }
+    }
+
+    &--down:not(:disabled) {
+      border: 1px solid $danger;
+
+      &::after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 4px 3.5px 0 3.5px;
+        border-color: $danger transparent transparent transparent;
+        margin-left: 5px;
+      }
+      &.bets__btn--3::after {
+        display: inherit;
+        position: absolute;
+        left: 6px;
+        // margin-top: 5px;
+        top: 50%;
+        margin-top: -2px;
+        margin-left: 0;
+      }
+    }
+
+    &--chosen:not(:disabled) {
+      background-color: #fdd50b;
+      border-color: #fdd50b !important;
+    }
+  }
+
+  &__more {
+    padding: 0;
+    background: transparent;
+    border: none;
+    color: #070a14;
+    font-size: 12px;
+    font-weight: 500;
+
+    @include media-max($md) {
+      .bets__tr--flex-column-mobile & {
+        padding: 9px 7px;
+        min-width: 36px;
+
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        // color: #fff;
+        text-align: center;
+
+        background: #313535;
+        border-radius: 8px;
+      }
+
+      color: #ffdf00;
+      &--zero {
+        color: #bcbcbc;
+      }
+    }
+  }
+
+  &__stat {
+    display: block;
+    width: 100%;
+
+    font-size: 11px;
+    color: #bcbcbc !important;
+    text-align: center;
+
+    &--active {
+      color: #ffdf00 !important;
+    }
+
+    &--jackpot {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+
+      width: 15px;
+      height: 15px;
+    }
+
+    @include media-max($md) {
+      .bets__tr--flex-column-mobile & {
+        width: 36px;
+        padding: 9px 7px;
+        margin-left: auto;
+
+        line-height: 15px;
+
+        background: #313535;
+        border-radius: 8px;
+      }
+    }
+  }
+
+  &__tr {
+    &--flex {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-left: 30px;
+      padding-right: 30px;
+
+      @include media-max($sm) {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+      }
+    }
+    &--wrapper {
+      padding-left: 30px;
+      padding-right: 30px;
+
+      @include media-max($sm) {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+      }
+    }
+    &--game-info {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-bottom: 4px;
+      position: relative;
+
+      @include media-max($sm) {
+        padding-left: 20px;
+      }
+    }
+    &--flex-column-mobile {
+      @include media-max($md) {
+        display: flex;
+        // flex-direction: column;
+        // align-items: flex-start !important;
+        padding: 0px !important;
+        position: relative;
+        border-bottom: 1px solid #E3E3E3;
+      }
+    }
+    &--head {
+      @include media-max($md) {
+        display: none;
+      }
+    }
+    &--border-bottom {
+      border-bottom: 1px solid #E7E6E6;
+    }
+    &--aligning {
+      @include media-max($md) {
+        display: none !important;
+      }
+    }
+    .bets thead & {
+      @include media-max($md) {
+        background-color: transparent !important;
+      }
+    }
+  }
+
+  &__tr:not(&__tr--flex):nth-child(odd) &__td {
+    @include media-min($md+1) {
+      background: rgba(196, 194, 194, 0.1);
+    }
+  }
+  // }
+  /*&__tr:nth-child(even) {
+    background: rgba(196, 194, 194, 0.1);
+
+    .modal--markets &,
+    thead & {
+      background: inherit;
+    }
+  }*/
+
+  &__match-time {
+    color: #070a14;
+    font-size: 12px;
+    font-weight: 500;
+    white-space: nowrap;
+    margin: 0;
+    width: 60px; // 115px;
+
+    @include media-max($md) {
+      display: none;
+      
+      position: absolute;
+      top: 10px;
+      text-align: center;
+      left: 33%;
+      width: 33%;
+      color: $text-color2;
+
+      &-caption {
+        display: block;
+        font-size: 10px;
+        margin-bottom: 8px;
+      }
+
+      &-value {
+        display: block;
+        font-weight: bold;
+      }
+    }
+  }
+
+  @include media-max($md) {
+    display: block;
+
+    tbody {
+      display: block;
+    }
+
+    &__tr {
+      display: flex;
+      position: relative;
+      flex-wrap: wrap;
+      padding: 11px 30px 13px;
+      align-items: center;
+      justify-content: space-between;
+
+      &--head {
+        display: none;
+      }
+    }
+
+    &__th {
+      padding: 10px 0 10px 8px;
+      color: #070a14;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+      width: 100%;
+
+      &--1x, &--x, &--2x, &--stat, &--bets,
+      &--selection {
+        display: none;
+      }
+    }
+
+    &__league-block {
+      justify-content: space-between;
+      padding: 0;
+    }
+
+    &__td {
+      &--date {
+        text-align: right;
+        padding: 0;
+        order: -1;
+        width: 27%;
+      }
+
+      &--1x, &--x, &--2x,
+      &--selection {
+        padding: 22px 3px 0;
+      }
+
+      &--1x,
+      &--selection:first-child {
+        margin-left: -3px;
+      }
+
+      &--clubs {
+        width: 50%;
+        order: -3;
+        padding: 0 10px 0 0;
+      }
+
+      &--bets {
+        text-align: right;
+        padding: 0;
+        width: 25px;
+      }
+
+      &--score {
+        order: -2;
+        width: 23%;
+        padding: 0;
+      }
+
+      &:first-child {
+        border-radius: 0;
+      }
+
+      &:last-child {
+        border-radius: 0;
+      }
+
+      &--bets, &--stat {
+        padding: 22px 0 0;
+      }
+
+      &--stat {
+        flex: 1;
+        text-align: center;
+        max-width: 50px;
+      }
+    }
+
+    &__score {
+      border-right: 2px solid #dedcdc;
+      padding: 8px 15px;
+
+      .bets__clubs--justify-center & {
+        border-right: 0;
+      }
+    }
+
+    &__live {
+      right: auto;
+      left: 20px;
+    }
+
+    &__clubs-logos {
+      display: block;
+      margin-right: 10px;
+    }
+
+    &__clubs-figure {
+
+      &:first-child {
+        z-index: 0;
+      }
+
+      & + & {
+        margin-left: 0;
+        margin-top: -6px;
+      }
+    }
+
+    &__clubs-name {
+      color: $text-color;
+      font-size: 12px;
+
+      & + & {
+        margin-top: -6px; // 13px;
+      }
+    }
+
+    &__score-item {
+
+      &--active {
+        position: relative;
+
+        &::before {
+          position: absolute;
+          top: 3px;
+          right: -16px;
+          margin-top: 0;
+          margin-right: 0;
+          border-width: 3.5px 6px 3.5px 0;
+          border-color: transparent #141717 transparent transparent;
+        }
+      }
+
+      & + & {
+        margin-top: 14px;
+      }
+    }
+
+    &__tr:nth-child(even) &__td {
+      background: transparent;
+    }
+
+    &__tr:nth-child(even) {
+      background: rgba(196, 194, 194, 0.1);
+    }
+
+  }
+
+  @include media-max($xs) {
+    &__tr {
+      padding: 11px 20px 13px 12px;
+    }
+  }
+}
+.bets__market-tr{
+  display: flex;
+  flex-direction: column;
+  
+}
+.bets__th,
+.bets__td {
+  @include media-max(1120px) {
+    &--selection-1,
+    &--selection-2,
+    &--selection-3 {
+      display: none;
+    }
+  }
+  @include media-min(1121px) {
+    &--selection-2,
+    &--selection-3 {
+      display: none;
+    }
+  }
+  // for boxing and tennis
+  @include media-min(1280px) {
+    &--selection-2[data-mode='bt'],
+    &--selection-2[data-mode='sh'],
+    &--selection-2[data-mode='bt-sh'],
+    &--selection-3[data-mode='bt-sh'] {
+      display: table-cell;
+    }
+  }
+  // for boxing and tennis
+  @include media-min(1440px) {
+    &--selection-3[data-mode='bt'] {
+      display: table-cell;
+    }
+  }
+  @include media-min(1520px) {
+    &--selection-2 {
+      display: table-cell;
+    }
+  }
+  @include media-min(1600px) {
+    &--selection-3[data-mode='sh'] {
+      display: table-cell;
+    }
+  }
+  @include media-min(1750px) {
+    &--selection-3 {
+      display: table-cell;
+    }
+  }
+}
+
+.bets__clubs-names {
+  overflow: hidden;
+  // max-width: 150px;
+  // flex-grow: 1;
+
+  // &--live {
+  //   @include media-max($prevlg) {
+  //     max-width: 50px;
+  //   }
+  //   @include media-max($md) {
+  //     max-width: none;
+  //   }
+  // }
+  // @include media-min(1280px) {
+  //   &[data-mode='sh'] {
+  //     max-width: 210px;
+  //   }
+  // }
+  // @include media-min(1600px) {
+  //   &[data-mode='bt']{
+  //     max-width: 240px;
+  //   }
+  // }
+  // @include media-min(1920px) {
+  //   max-width: 240px;
+  // }
+}
+
+.bets-cont {
+  padding: 4px 15px 35px; // 24px
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    width: calc(100% - 60px);
+    height: 4px;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+  }
+
+  &--empty {
+    padding-top: 20px;
+  }
+
+  @include media-max($sm) {
+    padding: 0 0 35px;
+
+    &--empty {
+      padding: 20px 20px 35px;
+    }
+  }
+}
+.bets-cont__message {
+  text-align: center;
+  font-weight: 700;
+}
+
+.bets-cont__wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bets-cont__download-link {
+  display: block;
+  width: 30px; // 18px
+  height: 30px; // 19px;
+  margin-left: 20px;
+  background-image: url('../images/icons/download.svg');
+  background-size: 20px auto; // 18px 19px;
+  background-position: center center; // center 0
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  @include media-max($sm) {
+    background-image: url('../images/icons/download--white.svg');
+  }
+  @include media-max($xs) {
+    margin-left: 10px;
+  }
+  &--grey {
+    background-image: url('../images/icons/download--white.svg');
+  }
+}
+
+.bets__btn-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 12px;
+  padding-right: 6px;
+  height: 100%;
+}
+.bets__btn-selection {
+  padding-right: 6px;
+  max-height: 100%;
+  overflow: hidden;
+
+  font-weight: 400;
+  text-align: left;
+
+  .bets__btn--chosen & {
+    font-weight: bold;
+  }
+}
+.bets__btn-selection-odd {
+  font-weight: 700;
+}
+
+.bets__market {
+  order: 3;
+  width: 100%;
+  padding: 16px 20px 20px;
+  background: rgba(196, 194, 194, 0.2);
+
+  &:nth-of-type(2) {
+    background: transparent;
+  }
+
+  @include media-min($md + 1px) {
+    display: none;
+  }
+}
+.bets__market-headline {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 13px;
+
+  font-size: 12px;
+  font-weight: 700;
+  color: $text-color2;
+}
+.bets__market-selections {
+  display: flex;
+}
+.bets__market-selection {
+
+  &--1 {
+    width: 100%;
+  }
+  &--2 {
+    width: 49%;
+    margin-right: 2%;
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+  &--3 {
+    width: 32%;
+    margin-right: 2%;
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+  &--4 {
+    width: 22%;
+    margin-right: 4%;
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+}
+.bets__market-selection-name {
+  margin-top: 0;
+  margin-bottom: 6px;
+
+  font-size: 10px;
+  color: $text-color2;
+  text-align: center;
+  font-weight: 400;
+}
+.bets__market-selection .bets__btn {
+  width: 100%;
+  background-color: #fff;
+
+  &--chosen:not(:disabled) {
+    background-color: $main;
+  }
+}
+
+.bets__market-name {
+  margin-top: 14px;
+  margin-bottom: 0;
+  
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.bets__all-markets {
+  &--hide-mobile {
+    @include media-max(1279px) {
+      display: none;
+    }
+  }
+}
+.bets__current-market {
+  @include media-min(1280px) {
+    display: none;
+  }
+}
+
+.bets__clubs-mobile {
+  @include media-min(1121px) {
+    display: none;
+  }
+}
+
+.bets__club-wrapper {
+  display: flex;
+  align-items: center;
+
+  & + & {
+    margin-top: -6px;
+  }
+}

@@ -1,0 +1,123 @@
+// @font-face {
+//     font-family: 'icomoon';
+//     src:  url('../vendors/icomoon/fonts/icomoon.eot');
+//     src:  url('../vendors/icomoon/fonts/icomoon.eot') format('embedded-opentype'),
+//       url('../vendors/icomoon/fonts/icomoon.ttf') format('truetype'),
+//       url('../vendors/icomoon/fonts/icomoon.woff') format('woff'),
+//       url('../vendors/icomoon/fonts/icomoon.svg#icomoon') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+//   }
+  // @font-face {
+  //   font-family: 'icomoon';
+  //   src:  url('../../icomoon.eot');
+  //   src:  url('../../icomoon.eot') format('embedded-opentype'),
+  //     url('../../icomoon.ttf') format('truetype'),
+  //     url('../../icomoon.woff') format('woff'),
+  //     url('../../icomoon.svg#icomoon') format('svg');
+  //   font-weight: normal;
+  //   font-style: normal;
+  // }
+
+
+  @font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?caq51l');
+  src:  url('../fonts/icomoon.eot?caq51l#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?caq51l') format('truetype'),
+    url('../fonts/icomoon.woff?caq51l') format('woff'),
+    url('../fonts/icomoon.svg?caq51l#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-info:before {
+    content: "\e917";
+  }
+  .icon-slip:before {
+    content: "\e916";
+  }
+  .icon-football:before {
+    content: "\e915";
+  }
+  .icon-limits:before {
+    content: "\e914";
+  }
+
+  .icon-sent:before {
+    content: "\e900";
+  }
+  .icon-like:before {
+    content: "\e901";
+  }
+  .icon-reply:before {
+    content: "\e902";
+  }
+  .icon-google-plus:before {
+    content: "\e903";
+  }
+  .icon-twitter:before {
+    content: "\e904";
+  }
+  .icon-facebook:before {
+    content: "\e905";
+  }
+  .icon-won:before {
+    content: "\e906";
+  }
+  .icon-lost:before {
+    content: "\e907";
+  }
+  .icon-pending:before {
+    content: "\e908";
+  }
+  .icon-tickets:before {
+    content: "\e909";
+  }
+  .icon-edit:before {
+    content: "\e90a";
+  }
+  .icon-transactions:before {
+    content: "\e90b";
+  }
+  .icon-withdraw:before {
+    content: "\e90c";
+  }
+  .icon-wallet:before {
+    content: "\e90d";
+  }
+  .icon-cup:before {
+    content: "\e90e";
+  }
+  .icon-camera:before {
+    content: "\e90f";
+  }
+  .icon-check:before {
+    content: "\e910";
+  }
+  .icon-arrow-down:before {
+    content: "\e911";
+  }
+  .icon-arrow-next:before {
+    content: "\e912";
+  }
+  .icon-arrow-prev:before {
+    content: "\e913";
+  }
+  

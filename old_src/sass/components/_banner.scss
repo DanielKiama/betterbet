@@ -1,0 +1,10 @@
+.banner {
+  display: block;
+  margin: 0 0 25px; // 0 -15px 25px;
+  border-radius: 12px;
+  overflow: hidden;
+
+  &__img {
+    width: 100%;
+  }
+}

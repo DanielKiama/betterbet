@@ -1,0 +1,136 @@
+.sports-list {
+  margin-bottom: 32px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding-right: 20px;
+  }
+
+  &__add {
+    opacity: 0.59;
+    color: #bcbcbc;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    cursor: pointer;
+
+    &:hover, &:focus {
+      text-decoration: none;
+    }
+    &--active {
+      text-decoration: underline !important;
+    }
+    &--inner {
+      @include media-min($md) {
+        display: none;
+      }
+    }
+
+    & .sports-list__more-btn-arrow {
+      @include media-min($md) {
+        display: none;
+      }
+    }
+  }
+
+  &__figure {
+    width: 26px;
+    height: 26px;
+    margin: 0 14px 0 0;
+    display: flex;
+  }
+
+  &--countries &__img {
+    min-width: 26px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+  }
+
+  &__fire {
+    height: 22px;
+  }
+
+  &--leagues &__img,
+  &--clubs &__img {
+    max-width: 20px;
+    max-height: 20px;
+    margin: auto;
+  }
+
+  &__item-title {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0;
+    flex: 1;
+
+    &--bold {
+      font-weight: bold;
+    }
+  }
+
+  &__item:hover &__item-title,
+  &__item:focus &__item-title {
+    text-decoration: underline;
+  }
+
+  &__count {
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    min-width: 40px;
+    padding-left: 10px;
+    text-align: right;
+  }
+
+  &__more-btn {
+    padding: 0;
+    margin-top: 13px;
+    
+    font-size: 10px;
+    font-weight: 500;
+    color: #fff;
+
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    &-arrow {
+      font-size: 5px;
+      margin-left: 3px;
+      vertical-align: middle;
+      margin-top: -2px;
+      display: inline-block;
+    }
+
+    &:hover {
+      text-decoration: underline;
+      color: inherit;
+    }
+
+    &:hover &-arrow {
+      text-decoration: none;
+    }
+  }
+}

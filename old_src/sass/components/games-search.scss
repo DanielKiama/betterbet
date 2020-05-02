@@ -1,0 +1,92 @@
+.games-search {
+  width: 114px;
+  height: 30px;
+  position: relative;
+
+  @include media-max($xs) {
+    width: 36px;
+  }
+
+  &__close-button {
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    padding: 0;
+
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    z-index: 1;
+
+    background-color: transparent;
+    background-image: url('../assets/img/icons/close.svg');
+    background-size: 16px 16px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+
+    opacity: 0;
+    pointer-events: none;
+    border: 0;
+    transition: .4s ease-in-out;
+
+    &--active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+
+  &__input {
+    display: block;
+    width: 114px;
+    height: 30px;
+    padding: 0 12px 0 36px;
+    margin: 0;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid transparent;
+    border-radius: 8px;
+    cursor: text;
+    transition: .2s ease-in-out;
+    background-image: url('../images/icons/search.svg');
+    background-size: 16px 16px;
+    background-position: 10px 7px;
+    background-repeat: no-repeat;
+  
+    &:focus {
+      border-bottom: 1px solid #000;
+    }
+    &::placeholder {
+      color: #000;
+    }
+    &--active {
+      // width: 314px;
+      // width: calc(100vw - 50px - 88px);
+      // left: 20 + 30, right: 20 + 18 + 30 + 20
+      // max-width: 450px;
+      width: 420px;
+      padding-right: 36px;
+    }
+
+    @include media-max($xs) {
+      width: 36px;
+      padding-left: 24px;
+      padding-right: 12px;
+
+      background-size: 12px 12px;
+      background-position: 12px 9px;
+
+      &--active {
+        // width: 274px;
+        width: calc(100vw - 28px - 56px);
+        // left: 8 + 20, right: 10 + 18 + 20 + 8
+        
+        padding-left: 36px;
+        padding-right: 36px;
+      }
+    }
+  }
+}

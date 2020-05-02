@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Flooks-layout</title>
+    <script>
+      (function() {
+        if (!Element.prototype.closest) {
+          Element.prototype.closest = function(css) {
+            var node = this;
+
+            while (node) {
+              if (node.matches(css)) return node;
+              else node = node.parentElement;
+            }
+            return null;
+          };
+        }
+      })();
+    </script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      //= ./html-components/header/header.html
+      <!--  -->
+      //= ./html-components/header/header-sports.html
+      <!--  -->
+      //= ./html-components/header/header-banner.html
+      <main class="main">
+        <!-- //= ././html-components/main/main-header.html -->
+        <!-- //= ././html-components/main/main-header-bottom.html -->
+        //= ./html-components/main/main-header-search.html
+        <div class="flex-row-wrapper">
+          //= ./html-components/main/homepage-selector.html
+          <!--  -->
+          //= ./html-components/main/game-type-selector.html
+        </div> 
+
+        <!-- //////////// -->
+        //= ././html-components/main/bets-table-new-index.html
+      </main>
+      <!-- //= ./html-components/footer.html -->
+      //= ./html-components/users-footer.html
+    </div>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>

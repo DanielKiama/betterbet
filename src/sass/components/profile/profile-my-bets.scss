@@ -1,0 +1,89 @@
+.profile-my-bets{
+padding-top: 20px;
+padding-left: 5px;
+padding-right: 5px;
+padding-bottom: 0px;
+}
+.profile-my-bets-title{
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.profile-my-bets-list{
+  padding-left: 0;
+  list-style: none;
+}
+.profile-my-bets-item{ 
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+    border: 1px solid $table-gret-bgc;
+    border-radius: 5px;
+    &:not(:last-child){
+      margin-bottom: 3px;
+    }
+ 
+}
+.profile-my-bets-item-wrapper-link{
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+.profile-my-bets-item-id{
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  height: 15px;
+  &--details{
+    height: auto;
+  }
+}
+.profile-my-bets-item-time-wrapper{
+  color: #ffffff;
+  font-size: 12px;
+}
+.profile-my-bets-item-right,
+.profile-my-bets-item-left{
+  display: flex;
+  flex-direction: column;
+
+}
+.profile-my-bets-item-left{
+  justify-content: space-between;
+}
+.profile-my-bets-item-kes{
+  color: #ffffff;
+  font-size: 12px;
+  height: 20px;
+}
+.profile-my-bets-item-check-btn{
+  display:block;
+  border: 0;
+  outline: 0;
+  text-align: right;
+  background-color: #ffd24e;
+  align-self: flex-end;
+  padding-top: 4px;
+  padding-bottom: 5px;
+  padding-left: 5px;padding-right: 5px;
+  border-radius: 3px;
+  font-size: 12px;
+  color: #fff;
+  &--pending{
+    background-color: #ffd24e;
+  }
+}
+
+.btn-group--column{
+  display: flex;
+  justify-content: space-between;
+  min-height: 20px;
+  // height: 100%;
+}

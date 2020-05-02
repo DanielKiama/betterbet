@@ -1,0 +1,85 @@
+.slip-btn {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  display: none;
+  position: absolute;
+  right: 21px;
+  // top: -38px;
+  margin-top: 2px;
+  
+  font-size: 26px;
+  color: #979797;
+  transition: .2s ease-in-out;
+
+  &__count {
+    position: absolute;
+    left: -8px;
+    top: -7px;
+    width: 16px;
+    height: 16px;
+    background-color: $danger;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 16px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+  }
+
+  &:hover, &:focus {
+    color: $light1;
+  }
+
+  @include media-max($md) {
+    display: block;
+  }
+  @include media-min($md) {
+    display: block;
+    position: relative;
+    margin-left: 30px;
+    right: 0;
+  }
+  @include media-min($lg) {
+    display: none;
+  }
+}
+
+.slip-mark {
+  margin: 0 5px;
+  padding: 8px 10px;
+  
+  font-size: 14px;
+  line-height: 1;
+  color: #373838;
+  text-transform: uppercase;
+  
+  background: #F8F8F8;
+  border-radius: 8px;
+
+  display: none;
+
+  .header--fixed & {
+    display: block;
+  }
+  .light-block__header & {
+    // display: block;
+    margin-right: 25px;
+
+    // @include media-max($xs) {
+    //   margin-right: 30px;
+    // }
+    @include media-min($xs + 1px) {
+      display: block;
+    }
+    @include media-min($lg) {
+      display: none;
+    }
+  }
+  
+  .light-block-tabs__right-wrapper & {
+    @include media-max($xs) {
+      display: block;
+    }
+  }
+}
