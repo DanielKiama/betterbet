@@ -22,11 +22,67 @@
   padding: 0 10px;
   background-color: #ffffff;
   box-sizing: border-box;
+  position: relative;
   &--after-log-in{
     height: 65px;
   }
-}
 
+}
+.main_nav{
+  background: #58595b;
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+  transition: 1s;
+  left: -100vw;
+  top: 195px;
+
+  &.active{
+    left: 0;
+    
+  }
+  ul{
+    margin: 0;
+    padding: 0;
+    li{
+      list-style: none;
+      padding:20px ;
+      color: $primary-white-color;
+      border-bottom: 1px solid;
+      transition: 0.5s;
+      cursor: pointer;
+      &:hover{
+        background: #37ae44;
+      }
+      a{
+        color: $primary-white-color;
+      }
+      &.primary_sub_menu{
+        ul{
+          height: 0;
+          overflow: hidden;
+          transition: 1s;
+          
+          li{
+            border:none;
+            padding:10px;
+            &:hover{
+              background: #58595b;
+            }
+          }
+        }
+        &.active
+        {
+          ul{
+            height: 300px;
+          }
+         
+        }
+      }
+    }
+  }
+}
 .header__betslip-wrapper {
   display: flex;
   align-items: center;

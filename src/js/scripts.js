@@ -62,3 +62,18 @@ function classToggle() {
 document.querySelector('.hamburger').addEventListener('click', classToggle);
 
 
+var el = document.querySelector('.hamburger');
+var navList = document.querySelector('.main_nav')
+
+el.onclick = function() {
+  navList.classList.toggle('active');
+}
+
+
+// main nav with dropdown
+var dropdownList = document.querySelector('.open_dropdown');
+var dropdownListActive = document.querySelector('.primary_sub_menu')
+
+dropdownList.onclick = function(){
+  dropdownListActive.classList.toggle('active')
+}
