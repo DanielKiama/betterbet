@@ -4,7 +4,7 @@
   text-decoration: none;
   min-height: 130px;
   background-color: $primary-white-color;
-  background-image: url("../../images/img/banners/banner_without_play.png");
+  background-image: url("../../images/img/banners/dailyjackpot.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -13,7 +13,21 @@
     min-height: 170px;
   }
 }
+
   // "./../../images/img/banners/banner_without_play.png"
+}
+.jackpot_banner{
+  background-image: url('../../../images/img/banners/dailyjackpot.jpg');
+  min-height: 150px;
+  background-size: cover;
+  width: 100%;
+}
+.go_back{
+  padding: 10px;
+  background: #37ae44;
+  color: #fff;
+  float: left;
+  margin: 10px;
 }
 .header-banner-inside-txt {
   // position: absolute;
