@@ -53,19 +53,16 @@ if (betsTableItemsList.length > 0) {
     item.addEventListener('click', showCurrentBetslipVal);
   });
 } //main nav
-
-
-function classToggle() {
-  this.classList.toggle('is-active');
-}
-
-document.querySelector('.hamburger').addEventListener('click', classToggle);
-var el = document.querySelector('.hamburger');
-var navList = document.querySelector('.main_nav');
-
-el.onclick = function () {
-  navList.classList.toggle('active');
-}; // main nav with dropdown
+// function classToggle() {
+//   this.classList.toggle('is-active');
+// }
+// document.querySelector('.hamburger').addEventListener('click', classToggle);
+// var el = document.querySelector('.hamburger');
+// var navList = document.querySelector('.main_nav')
+// el.onclick = function() {
+//   navList.classList.toggle('active');
+// }
+// main nav with dropdown
 
 
 var dropdownList = document.querySelector('.open_dropdown');

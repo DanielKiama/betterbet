@@ -103,6 +103,10 @@ body {
   display: block !important;
   flex: none !important;
 }
+.live_play .odds-val__item{
+  float: left;
+    margin: 0 5px !important;
+}
 .bets-table-odds-wrapper {
   display: block !important;
   flex: unset !important;
@@ -148,4 +152,8 @@ display: inline-flex !important;
 }
 .prebets-table.view_more_page .row{
   margin: 0;
+}
+
+.player-team__item--score {
+  color: #37ae44 !important;
 }

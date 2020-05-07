@@ -56,18 +56,18 @@ if (betsTableItemsList.length > 0) {
 
 
 //main nav
-function classToggle() {
-  this.classList.toggle('is-active');
-}
-document.querySelector('.hamburger').addEventListener('click', classToggle);
+// function classToggle() {
+//   this.classList.toggle('is-active');
+// }
+// document.querySelector('.hamburger').addEventListener('click', classToggle);
 
 
-var el = document.querySelector('.hamburger');
-var navList = document.querySelector('.main_nav')
+// var el = document.querySelector('.hamburger');
+// var navList = document.querySelector('.main_nav')
 
-el.onclick = function() {
-  navList.classList.toggle('active');
-}
+// el.onclick = function() {
+//   navList.classList.toggle('active');
+// }
 
 
 // main nav with dropdown
