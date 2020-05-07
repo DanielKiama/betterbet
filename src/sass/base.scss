@@ -73,4 +73,79 @@ body {
 }
 .main{
   background-color: $primary-light-dark-black-color;
+  overflow-x: hidden;
+}
+.game_top_bar{
+  background: #37ae44;
+  padding: 10px;
+  font-size: 14px;
+  color: $primary-white-color;
+  margin:0 0px 5px 0;
+}
+
+.divider{
+  color: #37ae44;
+}
+.odds{
+  background: $primary-white-color;
+  padding: 10px;
+  width: 80%;
+  float: left;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+.p-0{
+  padding: 0 !important;
+}
+.odds-val__item {
+  margin: 0 !important;
+  display: block !important;
+  flex: none !important;
+}
+.bets-table-odds-wrapper {
+  display: block !important;
+  flex: unset !important;
+}
+.bets-table-odds-wrapper .col-sm-3, .bets-table-odds-wrapper .col-xs-3{
+  width:20%;
+  margin: 6px;
+  border-radius: 5px;
+  border: none;
+}
+.view_more {
+  text-align: center;
+  position: absolute;
+  right: 20px;
+  top: 4px;
+}
+.view_more span{
+  color: #fff;
+  font-size: 15px;
+  background: #37ae44;
+  padding: 10px;
+  margin: 0px;
+  float: left;
+  line-height: 1;
+  font-weight: bold;
+
+}
+
+.view_more_page .bets-table__item-bottom{
+  display: unset;
+}
+.prebets-table.view_more_page .btn-group{
+display: inline-flex !important;
+
+}
+.prebets-table.view_more_page .col-sm-4{
+  width: 32%;
+  margin: 0 0.5% 0 0 !important;
+}
+.prebets-table.view_more_page .col-sm-6{
+  width: 48%;
+  margin: 0 0.5% 0 0 !important;
+}
+.prebets-table.view_more_page .row{
+  margin: 0;
 }
