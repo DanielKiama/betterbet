@@ -134,7 +134,12 @@ body {
   font-weight: bold;
 
 }
-
+@media only screen and (max-width:600px){
+  .view_more span{
+    padding: 4px;
+    margin: 10px 0;
+  }
+}
 .view_more_page .bets-table__item-bottom{
   display: unset;
 }

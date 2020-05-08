@@ -64,6 +64,9 @@
     right: 31px;
     background: #37ae44;
     top: 5px;
+    @media (max-width: 600px) {    
+      display: none;
+    }
 }
   @media (max-width: 319px) {    
     height: 25px;
