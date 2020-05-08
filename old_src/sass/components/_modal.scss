@@ -257,9 +257,9 @@
   }
 
   &__input-checkbox[type='checkbox']:checked + &__checkbox {
-    background-color: #fdd92a;
+    background-color: #39af46;
     color: #3d3c38;
-    border: 1px solid #fdd92a;
+    border: 1px solid #39af46;
   }
 
   &__checkbox-description {
@@ -279,7 +279,7 @@
     display: block;
     height: 40px;
     border-radius: 8px;
-    background-color: #fdd92a;
+    background-color: #39af46;
     color: #3d3c38;
     font-size: 12px;
     font-weight: 700;
