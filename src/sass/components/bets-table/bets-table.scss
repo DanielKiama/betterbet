@@ -3,7 +3,7 @@
   padding-bottom: 45px;
   position: relative;
   color: $grey-text-color;
-  background-color: $primary-light-black-color;
+  background-color:#333;
   border-radius: 5px;
 
   &--jackpot {
@@ -87,6 +87,13 @@
   box-sizing: border-box;
   padding-left: 3px;
   padding-right: 3px;
+  hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    border-top: 1px solid #eee;
+    width: 98%;
+}
 }
 
 .bets-table__item {
@@ -96,8 +103,7 @@
   padding-left: 5px;
   padding-right: 5px;
   padding-bottom: 10px;
-
-  background-color: $primary-light-dark-black-color;
+  background-color:#333 ;
   border-radius: 3px;
 
   &:not(:last-child) {
@@ -107,12 +113,14 @@
 
 .bets-table__item-top {
   display: flex;
-  // justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
   font-size: 12px;
-  color: $primary-white-color;
+  color: #ffffff;
   margin-right: 25px;
+  width: 100%;
+  background: #444444;
+  padding: 10px 5px;
   &--jackpot-closed {
     font-size: 8px;
     
@@ -203,6 +211,7 @@
 
   &:not(:last-child) {
     margin-bottom: 5px;
+    margin-top: 10px;
   }
 }
 
@@ -295,9 +304,10 @@
 .more-markets,
 .odds-value-img-wrapper {
   flex: 2;
-  font-weight: 700;
   font-size: 14px;
-  color: #000;
+  color: #ffffff;
+  background: #444444;
+    border: 1px solid;
 
   .odds-val__item-num {
     margin: 0;
@@ -356,6 +366,7 @@
 .player-team__item {
   &--score {
     color: #c44747;
+    margin-top: 10px;
   }
 }
 
