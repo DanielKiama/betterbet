@@ -247,6 +247,9 @@
     color: $primary-white-color;
     border-radius: 3px;
     text-decoration: none;
+    @media (max-width:768px){
+      min-width: 40px;
+    }
 }
 
 .odds-value-img-wrapper {
